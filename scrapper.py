@@ -6,10 +6,10 @@ from selenium import webdriver
 def getInfo(pageCont):
     """
     Extracts the links given a class.
-    :param pageCont: Estructura HTML de una web.
-    :return: lista con los enlaces url mencionados
+    :param pageCont: HTML structure of the webpage.
+    :return: several lists with the information
     """
-
+##TODO something is wrong with the css selectors, keep working on it
     artworks = pageCont.find_all(class_ = 'tile')
     length = len(artworks)
     links = []
