@@ -1,6 +1,6 @@
 # st21-what-street-art
 
-TEAM
+<p>TEAM<p>
 
 DS Emma Carballal
 DS Daryna Kubar
