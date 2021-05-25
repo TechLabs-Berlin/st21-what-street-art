@@ -1,0 +1,37 @@
+Warning messages:
+1: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/d/ddc04d78-8e53-4d5e-9a3c-a3d241673e05/512.jpg': HTTP status was '403 Forbidden'
+2: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/7/7e133106-90b6-4f2c-85a6-afc8c9ef7259/512.jpg': HTTP status was '403 Forbidden'
+3: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/c/cfa7f34f-0548-4550-83e4-f8735305cbdb/512.jpg': HTTP status was '403 Forbidden'
+4: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/b/babaa749-d48e-4718-9055-1c7904cf1f16/512.jpg': HTTP status was '403 Forbidden'
+5: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/5/56a37e1b-2a69-425c-ab22-05c901a58cc8/512.jpg': HTTP status was '403 Forbidden'
+6: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/2/2686743a-640c-43ae-a223-8614a14ffb63/512.jpg': HTTP status was '403 Forbidden'
+7: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/2/2dffb436-81c5-48cf-a96e-32b8312eb7b2/512.jpg': HTTP status was '403 Forbidden'
+8: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/4/419b7195-23ab-490f-99d9-e73d167256d8/512.jpg': HTTP status was '403 Forbidden'
+9: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/b/bf5cb82c-6467-4500-9675-f0249e9f850a/512.jpg': HTTP status was '403 Forbidden'
+10: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/f/f1494b68-e3cf-4a78-a3df-62eba4dbe63d/512.jpg': HTTP status was '403 Forbidden'
+11: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/3/37fc5038-01e1-4279-b23e-eacd62f15105/512.jpg': HTTP status was '403 Forbidden'
+12: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/2/28644dd9-91ae-4d6c-9f26-15a2e2d6111d/512.jpg': HTTP status was '403 Forbidden'
+13: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/8/8c4f85c8-773f-42fd-be83-a8323cb50f4f/512.jpg': HTTP status was '403 Forbidden'
+14: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/9/95cea071-7c67-4fcd-abda-1e204ad6c7ba/512.jpg': HTTP status was '403 Forbidden'
+15: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/9/9661480b-07b2-4f15-b273-5c6d186bda2b/512.jpg': HTTP status was '403 Forbidden'
+16: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/b/be31ca22-b711-4dfd-9e80-4acf4cad8c84/512.jpg': HTTP status was '403 Forbidden'
+17: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://streetartcities.com/media/a/a67022f1-f2cb-47df-9b6c-f0de6442b6dc/512.jpg': HTTP status was '403 Forbidden'
+18: In download.file(links, destfile = basename(paste0(dataset$id[i],  ... :
+  cannot open URL 'https://thumbnails.cloud/v2/jpg?url=https%3A%2F%2Fstreetartcities.com%2Fmedia%2Fmedia%252F7%252F7e6ea0d7-6751-404c-bf72-403092c09db7%252Forig.jpg&token=JJhSojKRZD0x3SbtB&size=512&mode=crop': HTTP status was '400 Bad Request'
