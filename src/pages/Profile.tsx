@@ -1,4 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonAvatar, IonChip } from '@ionic/react';
+import { pin, wifi, wine, warning, walk, heartOutline, bookmarkOutline, personOutline, exitOutline } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import './Profile.css';
 
@@ -10,13 +11,43 @@ const Profile: React.FC = () => {
           <IonTitle>Profile</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Profile</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Profile" />
+      <IonContent>
+        <IonCard>
+          <IonCardHeader>
+            <IonCardTitle>Anna Lebedenko</IonCardTitle>
+            <IonCardSubtitle>@annalebedenko</IonCardSubtitle>
+          </IonCardHeader>
+      <IonAvatar>
+      <img src="https://ca.slack-edge.com/T6QB33X0T-U01RJ95D74Z-45314715827d-512" />
+      </IonAvatar>
+          <IonCardContent>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </IonCardContent>
+        </IonCard>
+
+        <IonCard>
+          <IonItem>
+            <IonIcon icon={heartOutline} slot="start" />
+            <IonLabel>Liked Artworks</IonLabel>
+            <IonButton fill="outline" slot="end">View</IonButton>
+          </IonItem>
+
+          <IonItem href="#" className="ion-activated">
+            <IonIcon icon={bookmarkOutline} slot="start" />
+            <IonLabel>Saved Artworks</IonLabel>
+          </IonItem>
+
+          <IonItem href="#">
+            <IonIcon icon={personOutline} slot="start" />
+            <IonLabel>Edit Profile</IonLabel>
+          </IonItem>
+
+          <IonItem>
+            <IonIcon icon={exitOutline} slot="start" />
+            <IonLabel>Log Out</IonLabel>
+          </IonItem>
+        </IonCard>
       </IonContent>
     </IonPage>
   );

@@ -23,3 +23,6 @@ const Near: React.FC = () => {
 };
 
 export default Near;
+
+// See below website:
+// https://www.techiediaries.com/ionic-geolocation-google-maps-places-api/
