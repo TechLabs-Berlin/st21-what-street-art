@@ -9,10 +9,10 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, square, personCircleOutline, earthOutline, homeOutline, cameraOutline } from 'ionicons/icons';
 import Home from './pages/Home';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import Near from './pages/Near';
+import Camera from './pages/Camera';
 import Profile from './pages/Profile';
 
 /* Core CSS required for Ionic components to work properly */
@@ -42,11 +42,11 @@ const App: React.FC = () => (
           <Route exact path="/Home">
             <Home />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/Near">
+            <Near />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/Camera">
+            <Camera />
             </Route>
           <Route path="/Profile">
             <Profile />
@@ -57,19 +57,19 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="Home" href="/Home">
-            <IonIcon icon={square} />
+            <IonIcon icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={square} />
-            <IonLabel>Tab 2</IonLabel>
+          <IonTabButton tab="Near" href="/Near">
+            <IonIcon icon={earthOutline} />
+            <IonLabel>Near You</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton tab="Camera" href="/Camera">
+            <IonIcon icon={cameraOutline} />
+            <IonLabel>Camera</IonLabel>
             </IonTabButton>
           <IonTabButton tab="Profile" href="/Profile">
-            <IonIcon icon={ellipse} />
+            <IonIcon icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
         </IonTabBar>
