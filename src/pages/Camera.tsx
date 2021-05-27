@@ -23,3 +23,5 @@ const Camera: React.FC = () => {
 };
 
 export default Camera;
+
+// Possible camera code: https://ionicframework.com/docs/vue/your-first-app
