@@ -14,12 +14,12 @@ const Profile: React.FC = () => {
       <IonContent>
         <IonCard>
           <IonCardHeader>
-            <IonCardTitle>Anna Lebedenko</IonCardTitle>
-            <IonCardSubtitle>@annalebedenko</IonCardSubtitle>
-          </IonCardHeader>
-      <IonAvatar class="avatar">
+            <IonAvatar class="avatar">
       <img src="https://ca.slack-edge.com/T6QB33X0T-U01RJ95D74Z-45314715827d-512" />
       </IonAvatar>
+            <IonCardTitle class="profileName">Anna Lebedenko</IonCardTitle>
+            <IonCardSubtitle class="profileName">@annalebedenko</IonCardSubtitle>
+          </IonCardHeader>
           <IonCardContent>
             Keep close to Nature's heart... and break clear away, once in awhile,
             and climb a mountain or spend a week in the woods. Wash your spirit clean.
