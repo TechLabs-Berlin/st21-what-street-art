@@ -17,7 +17,7 @@ const Profile: React.FC = () => {
             <IonCardTitle>Anna Lebedenko</IonCardTitle>
             <IonCardSubtitle>@annalebedenko</IonCardSubtitle>
           </IonCardHeader>
-      <IonAvatar>
+      <IonAvatar class="avatar">
       <img src="https://ca.slack-edge.com/T6QB33X0T-U01RJ95D74Z-45314715827d-512" />
       </IonAvatar>
           <IonCardContent>

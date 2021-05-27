@@ -9,7 +9,7 @@ import {
   IonTabs,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, personCircleOutline, earthOutline, homeOutline, cameraOutline } from 'ionicons/icons';
+import { personCircleOutline, earthOutline, homeOutline, cameraOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import Near from './pages/Near';
 import Camera from './pages/Camera';
