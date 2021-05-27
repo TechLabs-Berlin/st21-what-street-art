@@ -1,4 +1,4 @@
-import { IonCard, IonCardTitle, IonCardContent, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonCard, IonCardTitle, IonCardContent, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardHeader } from '@ionic/react';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -13,14 +13,16 @@ const Home: React.FC = () => {
       <IonContent fullscreen>
 
     <IonCard>
-  <img src="/Users/mbpassos/what-street-art/resources/1.png" alt=""/>
   <IonCardContent>
+    <IonCardHeader>
+    <IonCardTitle>Popular</IonCardTitle>
+    </IonCardHeader>
+    <img src="https://www.tip-berlin.de/wp-content/uploads/2020/05/imago0079536013h-1600x1068.jpg" alt="Angriff der 20-Meter-Frau"/>
     <IonCardTitle>
-      Nine Inch Nails Live
+      Angriff der 20-Meter-Frau, Tristan Eaton
       </IonCardTitle>
     <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+      The Los Angeles-born artist was inspired by film history and translated the B-movie classic "Attack of the 20-Meter Woman" (1958) for his film painting.
     </p>
   </IonCardContent>
 </IonCard>
