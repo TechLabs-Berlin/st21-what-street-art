@@ -1,4 +1,5 @@
-import { IonCard, IonCardTitle, IonCardContent, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardHeader } from '@ionic/react';
+import { IonCard, IonCardTitle, IonCardContent, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCardHeader, IonSlides } from '@ionic/react';
+import { options } from 'ionicons/icons';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -12,7 +13,11 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
 
-    <IonCard>
+{/* Popular Horizontal Slide */}
+{/* https://swiperjs.com/react */}
+
+<IonSlides>
+<IonCard>
   <IonCardContent>
     <IonCardHeader>
     <IonCardTitle>Popular</IonCardTitle>
@@ -21,15 +26,20 @@ const Home: React.FC = () => {
     <IonCardTitle>
       Angriff der 20-Meter-Frau, Tristan Eaton
       </IonCardTitle>
-    <p>
-      The Los Angeles-born artist was inspired by film history and translated the B-movie classic "Attack of the 20-Meter Woman" (1958) for his film painting.
-    </p>
   </IonCardContent>
 </IonCard>
+</IonSlides>
 
-
-
-
+<IonSlides>
+<IonCard>
+  <IonCardContent>
+    <img src="https://www.tip-berlin.de/wp-content/uploads/2020/05/imago0081188948h-1536x1024.jpg" alt="Angriff der 20-Meter-Frau"/>
+    <IonCardTitle>
+      Test the Best, Birgit Kinder
+      </IonCardTitle>
+  </IonCardContent>
+</IonCard>
+</IonSlides>
 
 
       </IonContent>
@@ -63,3 +73,4 @@ export default Home;
 //   </IonPage>
 //   );
 // };
+
