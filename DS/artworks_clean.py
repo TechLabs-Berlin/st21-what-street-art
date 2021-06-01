@@ -21,7 +21,6 @@ for date in artworks['timestamp'] :
     list_datetime.append(datetime_date)
 
 artworks.insert(11, 'date_added', list_datetime)
-# artworks['date_added'] = list_datetime
 artworks['date_added'] = pd.to_datetime(artworks['date_added'])
 
 
