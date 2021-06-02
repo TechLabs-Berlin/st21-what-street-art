@@ -7,6 +7,7 @@ import './Header.css';
 
 const Header: React.FC = () => {
 return (
+
     <IonHeader>
         <IonToolbar>
             <IonTitle className="headerTitle">What Street Art</IonTitle>
@@ -17,6 +18,7 @@ return (
             </IonButtons>
         </IonToolbar>
     </IonHeader>
+
 );
 };
 
