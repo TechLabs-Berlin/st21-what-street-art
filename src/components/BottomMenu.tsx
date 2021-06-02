@@ -9,7 +9,7 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { personCircleOutline, earthOutline, homeOutline, cameraOutline, gridOutline, planetOutline } from 'ionicons/icons';
-import Home from '../pages/Home';
+/*{import Home from '../pages/Home';}*/
 import Map from '../pages/Map';
 import Galleries from '../pages/Galleries';
 import Camera from '../pages/Camera';
@@ -25,10 +25,10 @@ const BottomMenu: React.FC = () => {
         <IonRouterOutlet>
 
 {/* Routes */}
-  {/* Home */}
-  <Route exact path="/Home">
+  {/* Home
+  {/*<Route exact path="/Home">
             <Home />
-          </Route>
+  </Route>*/}
 
   {/* Map */}
         <Route exact path="/Map">
@@ -61,11 +61,11 @@ const BottomMenu: React.FC = () => {
         <IonTabBar slot="bottom">
 
 {/* Tabs */}
-  {/* Home */}
+  {/* Home 
   <IonTabButton tab="Home" href="/Home">
             <IonIcon icon={homeOutline} />
             <IonLabel>Home</IonLabel>
-          </IonTabButton>
+          </IonTabButton>/*/}
 
   {/* Map */}
           <IonTabButton tab="Map" href="/Map">
