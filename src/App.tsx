@@ -2,6 +2,7 @@ import {
   IonApp,
 } from '@ionic/react';
 import BottomMenu from './components/BottomMenu';
+import Header from './components/Header';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,7 +25,8 @@ import './theme/variables.css';
 
 const App: React.FC = () => (
   <IonApp>
-<BottomMenu />
+    <Header />
+    <BottomMenu />
   </IonApp>
 );
 
