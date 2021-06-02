@@ -13,3 +13,6 @@ const Settings: React.FC = () => {
     };
     
 export default Settings;
+
+
+{/*use ion-nav for settings options*/}
