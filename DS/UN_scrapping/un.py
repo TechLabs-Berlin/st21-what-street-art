@@ -47,6 +47,7 @@ print(d1)
 
 d2 = d1[1].str.split(pat=' for ', expand = True)
 d2.rename(columns = {1 : 'description/en'}, inplace = True)
+d2['artistString'] = d2[0]
 print(d2)
 
 d3 = d2[0].str.split(pat=' & ', expand = True)
@@ -123,8 +124,32 @@ for x in range(len(map_pins) - 1):
 un_incomplete = pd.DataFrame(
     {'data_address': data_address, 'data_city': data_city, 'data_icon': data_icon, 'data_id': data_id, 'data_lat': data_lat, 'data_link': data_link, 'data_lng': data_lng,'data_thumb': data_thumb, 'data_type': data_type, 'data_zip': data_zip})
 un_incomplete.index.name = 'id'
-print(un_incomplete)
+#print(un_incomplete)
 
 un_complete = pd.merge(data_title_df, un_incomplete, left_index=True, right_index=True)
-print(un_complete)
-un_complete.to_csv('/Users/darynakubar/PycharmProjects/UN_scrapping/un_complete.csv', index=False)
+#print(un_complete)
+#un_complete.to_csv('/Users/darynakubar/PycharmProjects/UN_scrapping/un_complete.csv', index=False)
+
+un_complete = un_complete.drop(columns=['data_type', 'data_id', 'data_icon'])
+
+un_complete['location/address'] = un_complete['data_address'] + ', ' + un_complete['data_zip'] + ' ' + un_complete['data_city'] + ', Deutschland'
+
+un_complete = un_complete.drop(columns=['data_address', 'data_zip'])
+
+un_complete.rename(columns = {'data_city' : 'cityName', 'data_lat' : 'location/lat', 'data_link' : 'href', 'data_lng' : 'location/lng', 'data_thumb': 'thumbnail'}, inplace = True)
+
+for col in un_complete.columns:
+    print(col)
+
+print(un_complete[un_complete['thumbnail'] == ''].index)
+
+un_complete = un_complete.drop([23, 27, 28])
+
+#print(un_complete['thumbnail'])
+
+un_complete['cityCountry'] = 'Germany'
+un_complete['cityCountryShort'] = 'DE'
+
+un_complete.to_csv('/Users/darynakubar/Documents/WhatStreetArt/st21-what-street-art/DS/UN_scrapping/un_complete.csv', index=False)
+
+
