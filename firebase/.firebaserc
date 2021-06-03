@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "production": "what-street-art-dev",
+    "staging": "what-street-art-dev"
+  }
+}
