@@ -58,21 +58,28 @@ h4 {
   position: relative;
 }
 
+
+/*Text Overlay*/
 .info-block {
   position: absolute;
   width: 80%;
   bottom: 10%;
-  right: ;
+  padding-bottom: 5%;
+  padding-top: 5%;
   background-color: black;
   opacity: 75%;
   color: white;
+}
+
+.image-title {
   font-size: 15px;
 }
 
-
-
-
-
+.image-artist {
+  font-style: italic;
+  font-size: 12px;
+}
+  
 
 
 .imgDetails {
