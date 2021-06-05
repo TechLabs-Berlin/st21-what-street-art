@@ -20,6 +20,8 @@ export const Galleries: React.FC = () => {
   <IonPage>
     <Header />
       <IonContent>
+
+        <h4>Popular</h4>
         <div>
         <Swiper slidesPerView={2} spaceBetween={-5} loop={true} className="mySwiper1">
           <SwiperSlide> <img src="https://velvetescape.com/wp-content/uploads/2018/02/IMG_4081-1280x920.jpg" /></SwiperSlide>
@@ -33,6 +35,8 @@ export const Galleries: React.FC = () => {
           <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
         </div>
+
+        <h4>Recently Added</h4>
         <div>
         <Swiper slidesPerView={2} spaceBetween={-5} loop={true} className="mySwiper2">
           <SwiperSlide> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wandbild_Portrait_George_Floyd_von_Eme_Street_Art_im_Mauerpark_%28Berlin%29.jpg/2560px-Wandbild_Portrait_George_Floyd_von_Eme_Street_Art_im_Mauerpark_%28Berlin%29.jpg" /></SwiperSlide>
@@ -46,9 +50,12 @@ export const Galleries: React.FC = () => {
           <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
         </div>
+
+
+      <h4>Near You</h4>
         <div>
         <Swiper slidesPerView={2} spaceBetween={-5} loop={true} className="mySwiper3">
-          <SwiperSlide>Near You</SwiperSlide>
+          <SwiperSlide>Slide 1</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
           <SwiperSlide>Slide 4</SwiperSlide>
