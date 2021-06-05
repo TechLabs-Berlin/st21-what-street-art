@@ -21,7 +21,7 @@ export const Galleries: React.FC = () => {
     <Header />
       <IonContent>
         <div>
-        <Swiper slidesPerView={2} spaceBetween={10} className="mySwiper1">
+        <Swiper slidesPerView={2} spaceBetween={10} loop={true} className="mySwiper1">
           <SwiperSlide> <img src="https://velvetescape.com/wp-content/uploads/2018/02/IMG_4081-1280x920.jpg" /></SwiperSlide>
           <SwiperSlide> <img src="https://hierdadort.de/wp-content/uploads/2020/05/P1000650-Cover_1800_Vogel.jpg" /></SwiperSlide>
           <SwiperSlide> <img src="https://www.tip-berlin.de/wp-content/uploads/2020/05/imago0092310228h-800x517.jpg" /></SwiperSlide>
@@ -34,7 +34,7 @@ export const Galleries: React.FC = () => {
         </Swiper>
         </div>
         <div>
-        <Swiper slidesPerView={2} spaceBetween={10} className="mySwiper2">
+        <Swiper slidesPerView={2} spaceBetween={10} loop={true} className="mySwiper2">
           <SwiperSlide> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Wandbild_Portrait_George_Floyd_von_Eme_Street_Art_im_Mauerpark_%28Berlin%29.jpg/2560px-Wandbild_Portrait_George_Floyd_von_Eme_Street_Art_im_Mauerpark_%28Berlin%29.jpg" /></SwiperSlide>
           <SwiperSlide> <img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzL2U4NjdhZjhpZm5icDd5YTUwN2NhM2JlNWUwYzQyZTBiOTVfMTEyMzExNjNfMTAxNTYwNDczNDkwOTA0MzRfNzgxMjkzNzE3NjA4ODIyMDAxMF9vLmpwZyJdLFsicCIsInRodW1iIiwiNTgweDU4MCMiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il1d/11231163_10156047349090434_7812937176088220010_o.jpg" /></SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
@@ -47,7 +47,7 @@ export const Galleries: React.FC = () => {
         </Swiper>
         </div>
         <div>
-        <Swiper slidesPerView={2} spaceBetween={10} className="mySwiper3">
+        <Swiper slidesPerView={2} spaceBetween={10} loop={true} className="mySwiper3">
           <SwiperSlide>Near You</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
           <SwiperSlide>Slide 3</SwiperSlide>
