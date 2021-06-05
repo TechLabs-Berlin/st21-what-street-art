@@ -60,12 +60,13 @@ h4 {
 
 .info-block {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  width: 80%;
+  bottom: 10%;
+  right: ;
   background-color: black;
+  opacity: 75%;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-size: 15px;
 }
 
 
