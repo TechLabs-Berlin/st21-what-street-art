@@ -10,11 +10,11 @@ return (
 
     <IonHeader>
         <IonToolbar>
-            <IonTitle className="headerTitle">What Street Art</IonTitle>
+            <h1>What Street Art</h1>
             <IonButtons slot="primary">
-            <IonButton href="/Settings">
-          <IonIcon icon={settingsOutline}/>
-        </IonButton>
+                <IonButton href="/Settings">
+                    <IonIcon icon={settingsOutline}/>
+                </IonButton>
             </IonButtons>
         </IonToolbar>
     </IonHeader>
