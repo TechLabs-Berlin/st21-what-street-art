@@ -35,3 +35,5 @@ artworks.index = range(len(artworks))
 # Write to csv file
 artworks.to_csv('artworks_clean.csv')
 
+
+

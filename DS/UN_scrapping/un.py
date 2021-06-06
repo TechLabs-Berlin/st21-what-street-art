@@ -47,7 +47,7 @@ print(d1)
 
 d2 = d1[1].str.split(pat=' for ', expand = True)
 d2.rename(columns = {1 : 'description/en'}, inplace = True)
-d2['artistString'] = d2[0]
+d2['artistsString'] = d2[0]
 print(d2)
 
 d3 = d2[0].str.split(pat=' & ', expand = True)
