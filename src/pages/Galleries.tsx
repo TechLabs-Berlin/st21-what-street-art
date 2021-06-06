@@ -27,7 +27,7 @@ export const Galleries: React.FC = () => {
 {/*Popular*/}
       <h4>Popular</h4>
       <div>
-        <Swiper slidesPerView={2} spaceBetween={-10} loop={true} className="mySwiper1">
+        <Swiper slidesPerView={2} spaceBetween={-10} loop={false} className="mySwiper1">
           <SwiperSlide> 
             <img src="https://velvetescape.com/wp-content/uploads/2018/02/IMG_4081-1280x920.jpg" />
             <div className="info-block">
@@ -93,7 +93,7 @@ export const Galleries: React.FC = () => {
 {/*Recently Added*/}
         <h4>Recently Added</h4>
         <div>
-        <Swiper slidesPerView={2} spaceBetween={-10} loop={true} className="mySwiper1">
+        <Swiper slidesPerView={2} spaceBetween={-10} loop={false} className="mySwiper1">
           <SwiperSlide> 
             <img src="https://velvetescape.com/wp-content/uploads/2018/02/IMG_4081-1280x920.jpg" />
             <div className="info-block">
@@ -159,7 +159,7 @@ export const Galleries: React.FC = () => {
 {/*Near You*/}
       <h4>Near You</h4>
       <div>
-        <Swiper slidesPerView={2} spaceBetween={-10} loop={true} className="mySwiper1">
+        <Swiper slidesPerView={2} spaceBetween={-10} loop={false} className="mySwiper1">
           <SwiperSlide> 
             <img src="https://velvetescape.com/wp-content/uploads/2018/02/IMG_4081-1280x920.jpg" />
             <div className="info-block">
