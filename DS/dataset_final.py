@@ -33,23 +33,15 @@ df_final.index = range(len(df_final))
 likes_median = df_final['likes'].median()
 df_final = df_final.fillna({'likes':likes_median})
 
-#df_final.to_csv('data_final.csv', index=False)
-
-def random_dates(start, end, n=11):
-
-    start_u = start.value//10**9
-    end_u = end.value//10**9
-
-    return pd.to_datetime(np.random.randint(start_u, end_u, n), unit='s')
-
 df_final['date_added'] = pd.to_datetime(df_final['date_added'])
-start_datetime = df_final['date_added'].min()
-end_datetime = df_final['date_added'].max()
+date_added_median = df_final['date_added'].median()
+df_final = df_final.fillna({'date_added': date_added_median})
 
-random_date_added = random_dates(start_datetime, end_datetime)
+timestamp_median = df_final['timestamp'].median()
+df_final = df_final.fillna({'timestamp': timestamp_median})
 
-#random_date_added = random_date_added.dt.strftime('%Y-%m-%d %H:%M:%S')
-#print(random_date_added)
-#print(df_final['date_added'].isna().sum())
-#df_final = df_final.fillna({'date_added': random_date_added})
+df_final.to_csv('data_final.csv', index=False)
+
+
+
 
