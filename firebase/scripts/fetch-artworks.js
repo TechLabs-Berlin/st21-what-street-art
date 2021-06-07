@@ -18,7 +18,9 @@ const fetchArtworks = async () => {
   const result = rawResult.map((item) => ({
     id: item.id,
     link: item.href,
-    title: item.location,
+    title: item.title,
+    artist: item.artistsString,
+    description: item.description_en,
     likes: Number(item.likes),
     dateAdded: admin.firestore.Timestamp.fromDate(new Date(item.date_added)),
     location: {
