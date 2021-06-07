@@ -2,7 +2,8 @@
   height: 100%;
 }
 
-html, body {
+html,
+body {
   position: relative;
   height: 100%;
 }
@@ -27,13 +28,13 @@ h4 {
 .swiper-container {
   width: 100%;
   height: 240px;
-  position:relative;
+  position: relative;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #eee);
+  background: #eee;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -58,7 +59,6 @@ h4 {
   position: relative;
 }
 
-
 /*Text Overlay*/
 .info-block {
   position: absolute;
@@ -79,8 +79,6 @@ h4 {
   font-style: italic;
   font-size: 12px;
 }
-  
-
 
 .imgDetails {
   display: block;
@@ -93,7 +91,6 @@ h4 {
   position: absolute;
 }
 
-
 .swiper-slide {
   width: 100%;
 }
@@ -105,4 +102,3 @@ h4 {
 .swiper-slide:nth-child(3n) {
   width: 100%;
 }
-
