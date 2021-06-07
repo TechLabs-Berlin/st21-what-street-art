@@ -4,7 +4,7 @@ const { logger } = require("./_shared");
 const path = require("path");
 
 const config = {
-  input: "../../DS/artworks_clean.csv",
+  input: "../../DS/data_final.csv",
   output: `./config/collections/artworks.json`,
 };
 
@@ -15,17 +15,19 @@ const fetchArtworks = async () => {
   const rawResult = await csv().fromFile(path.resolve(__dirname, config.input));
 
   const result = rawResult.map((item) => ({
-    id: item.field1,
+    id: item.id,
     link: item.href,
     title: item.location,
+    likes: Number(item.likes),
+    dateAdded: item.date_added,
     location: {
       coordinates: {
-        lat: item["location/lat"],
-        lng: item["location/lng"],
+        lat: item["location_lat"],
+        lng: item["location_lng"],
       },
       city: item.cityName,
       country: item.cityCountry,
-      address: item["location/address"],
+      address: item["location_address"],
     },
   }));
 
