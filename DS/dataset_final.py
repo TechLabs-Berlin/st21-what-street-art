@@ -45,28 +45,5 @@ timestamp_median = df_final['timestamp'].median()
 df_final = df_final.fillna({'timestamp': timestamp_median})
 
 df_final['lat_lng'] = list(zip(df_final['location_lat'], df_final['location_lng']))
-print(type(df_final['lat_lng']))
 
 df_final.to_csv('data_final.csv', index=False)
-
-from geopy.geocoders import Nominatim
-from geopy.distance import geodesic
-
-geolocator = Nominatim(timeout=20, user_agent = 'what_street_art')
-
-input_address = '31, Tasdorfer Str, Berlin, 10365, Deutschland'
-input_address_to_coord = geolocator.geocode(input_address)
-input_coord = (input_address_to_coord.latitude, input_address_to_coord.longitude)
-
-location = df_final['lat_lng']
-print(type(location))
-
-for coord in location:
-    distance = geodesic(input_coord, coord).km
-    if distance <= 2:
-        index = location[location == coord].index[0]
-        result = df_final.id[index].tolist()
-        print(result)
-
-
-

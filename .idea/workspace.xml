@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb37dd8e-1dc2-47cf-a0de-4ddf0ad01533" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/DS/near_you.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/st21-what-street-art.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/st21-what-street-art.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS/data_final.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DS/data_final.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS/dataset_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/DS/dataset_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +32,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.dataset_final">
+  <component name="RunManager" selected="Python.near_you">
     <configuration name="artworks_clean" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="st21-what-street-art" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dataset_final" />
         <item itemvalue="Python.near_you" />
+        <item itemvalue="Python.dataset_final" />
         <item itemvalue="Python.artworks_clean" />
         <item itemvalue="Python.data_final_redo" />
         <item itemvalue="Python.un" />
