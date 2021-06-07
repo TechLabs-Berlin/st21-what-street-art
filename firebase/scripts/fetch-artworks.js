@@ -2,6 +2,7 @@ const csv = require("csvtojson");
 const fs = require("fs-extra");
 const { logger } = require("./_shared");
 const path = require("path");
+const admin = require("firebase-admin");
 
 const config = {
   input: "../../DS/data_final.csv",
@@ -19,7 +20,7 @@ const fetchArtworks = async () => {
     link: item.href,
     title: item.location,
     likes: Number(item.likes),
-    dateAdded: item.date_added,
+    dateAdded: admin.firestore.Timestamp.fromDate(new Date(item.date_added)),
     location: {
       coordinates: {
         lat: item["location_lat"],
