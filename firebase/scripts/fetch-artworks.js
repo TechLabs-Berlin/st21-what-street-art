@@ -22,6 +22,7 @@ const fetchArtworks = async () => {
     artist: item.artistsString,
     description: item.description_en,
     likes: Number(item.likes),
+    attributionPhoto: item.attributions_0,
     dateAdded: admin.firestore.Timestamp.fromDate(new Date(item.date_added)),
     location: {
       coordinates: {
