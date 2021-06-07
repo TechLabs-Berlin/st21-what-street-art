@@ -26,10 +26,10 @@ for coord in location:
         print(result)
         print(type(result))
 
-# app = Flask(__name__)
-# @app.route('/')
-# def index():
-#     return result
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
+app = Flask(__name__)
+@app.route('/')
+def index():
+    return result
+
+if __name__ == '__main__':
+    app.run(debug=True)
