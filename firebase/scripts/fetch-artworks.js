@@ -17,6 +17,7 @@ const fetchArtworks = async () => {
 
   const result = rawResult.map((item) => ({
     id: item.id,
+    source: item.source,
     link: item.href,
     title: item.title,
     artist: item.artistsString,
