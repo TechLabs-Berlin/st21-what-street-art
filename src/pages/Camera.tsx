@@ -1,15 +1,22 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonPage, IonTitle, IonToolbar, IonFab, IonFabButton, IonIcon, IonGrid, IonRow, IonCol, IonImg, IonActionSheet } from '@ionic/react';
+import { cameraOutline, trash, close } from 'ionicons/icons'
 import ExploreContainer from '../components/ExploreContainer';
 import Header from '../components/Header';
 import './Camera.css';
+import { usePhotoGallery } from "../hooks/usePhotoGallery";
 
 
 const Camera: React.FC = () => {
+  const { photos, takePhoto } = usePhotoGallery()
   return (
     <IonPage>
       <Header />
       <IonContent fullscreen>
-        <ExploreContainer name="Camera" />
+        <IonFab vertical="bottom" horizontal="center" slot="fixed">
+          <IonFabButton onClick={() => takePhoto()}>
+            <IonIcon icon={cameraOutline}></IonIcon>
+          </IonFabButton>
+        </IonFab>
       </IonContent>
     </IonPage>
   );
