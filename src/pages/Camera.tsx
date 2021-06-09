@@ -12,6 +12,15 @@ const Camera: React.FC = () => {
     <IonPage>
       <Header />
       <IonContent fullscreen>
+        <IonGrid>
+          <IonRow>
+          {photos.map((photo, index) => (
+            <IonCol size="6" key={index}>
+              <IonImg src={photo.webviewPath} />
+            </IonCol>
+        ))}
+          </IonRow>
+        </IonGrid>
         <IonFab vertical="bottom" horizontal="center" slot="fixed">
           <IonFabButton onClick={() => takePhoto()}>
             <IonIcon icon={cameraOutline}></IonIcon>

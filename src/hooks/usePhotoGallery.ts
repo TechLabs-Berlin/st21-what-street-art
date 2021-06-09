@@ -25,6 +25,14 @@ export function usePhotoGallery() {
     });
 
     const fileName = new Date().getTime() + ".jpeg";
+    const newPhotos = [
+      {
+        filepath: fileName,
+        webviewPath: cameraPhoto.webPath,
+      },
+      ...photos,
+    ];
+    setPhotos(newPhotos);
 };
 
   return {
