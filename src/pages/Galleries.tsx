@@ -30,13 +30,19 @@ export const Galleries: React.FC = () => {
     property: "dateAdded",
   });
 
+  // Still need to define the location
+  const nearYouArtworksData = usePopularArtworks({
+    limit: 9,
+    property: "location"
+  });
+
   return (
     <IonPage>
       <Header />
       <IonContent>
         <AssetSlider title="Popular" data={popularArtworksData} />
         <AssetSlider title="Recently Added" data={recentArtworksData} />
-        <AssetSlider title="Near you" data={popularArtworksData} />
+        <AssetSlider title="Near you" data={nearYouArtworksData} />
       </IonContent>
     </IonPage>
   );
