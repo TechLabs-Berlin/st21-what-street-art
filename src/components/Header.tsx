@@ -3,19 +3,18 @@ import { IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonTitle } from 
 import { settingsOutline } from 'ionicons/icons';
 import './Header.css';
 
-
-
 const Header: React.FC = () => {
 return (
-
     <IonHeader>
         <IonToolbar>
             <h1>What Street Art</h1>
+
             <IonButtons slot="primary">
                 <IonButton href="/Settings">
                     <IonIcon icon={settingsOutline}/>
                 </IonButton>
             </IonButtons>
+
         </IonToolbar>
     </IonHeader>
 
@@ -24,4 +23,3 @@ return (
 
 
 export default Header;
-
