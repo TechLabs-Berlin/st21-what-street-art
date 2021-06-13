@@ -9,6 +9,7 @@ const Camera: React.FC = () => {
     <IonPage>
       <Header />
       <IonContent fullscreen>
+        <h1>Camera</h1>
         <ExploreContainer name="Camera" />
       </IonContent>
     </IonPage>

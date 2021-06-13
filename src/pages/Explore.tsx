@@ -8,6 +8,7 @@ const Explore: React.FC = () => {
         <IonPage>
           <Header />
           <IonContent fullscreen>
+            <h1>Explore</h1>
             <ExploreContainer name="Explore" />
           </IonContent>
         </IonPage>

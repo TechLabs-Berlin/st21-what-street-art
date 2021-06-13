@@ -8,6 +8,7 @@ const Map: React.FC = () => {
     <IonPage>
       <Header />
     <IonContent fullscreen>
+      <h1>Map</h1>
       <ExploreContainer name="Map" />
     </IonContent>
   </IonPage>
