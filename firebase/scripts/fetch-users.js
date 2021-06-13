@@ -19,6 +19,8 @@ const fetchUsers = async () => {
     id: item.id,
     email: item.email,
     country: item.country,
+    age: item.age,
+    gender: item.gender,
     liked: Array(item.liked),
     saved: Array(item.saved)
   }));
