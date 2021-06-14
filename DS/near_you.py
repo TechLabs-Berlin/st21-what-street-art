@@ -1,7 +1,6 @@
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
 import pandas as pd
-from flask import Flask
 
 df_final = pd.read_csv('data_final.csv')
 df_final['lat_lng'] = list(zip(df_final['location_lat'], df_final['location_lng']))
@@ -25,12 +24,9 @@ for coord in location:
         index = location[location == coord].index[0]
         ids_dict[index] = dis
 print(ids_dict)
+print(type(ids_dict))
 
 
-# app = Flask(__name__)
-# @app.route('/')
-# def index():
-#     return ids_dict
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
+
+
+
