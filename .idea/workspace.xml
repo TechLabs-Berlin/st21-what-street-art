@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb37dd8e-1dc2-47cf-a0de-4ddf0ad01533" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DS/near_you.py" beforeDir="false" afterPath="$PROJECT_DIR$/DS/near_you.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS/near_you_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/DS/near_you_api.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
       <recent name="$PROJECT_DIR$/DS" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.near_you1">
+  <component name="RunManager" selected="Python.near_you_api">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="st21-what-street-art" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.near_you1" />
         <item itemvalue="Python.near_you_api" />
+        <item itemvalue="Python.near_you1" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.dataset_final" />
         <item itemvalue="Python.artworks_clean" />
