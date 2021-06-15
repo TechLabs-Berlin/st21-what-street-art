@@ -9,6 +9,7 @@
     "automation:pull:collection": "node scripts/pull-collection.js",
     "automation:push:collection": "node scripts/push-collection.js",
     "automation:fetch:artworks": "node scripts/fetch-artworks.js",
+    "automation:fetch:users": "node scripts/fetch-users.js",
     "build": "yarn clean && tsc",
     "clean": "rm -rf dist",
     "deploy:production": "yarn deploy:production:functions && yarn deploy:production:rules",
