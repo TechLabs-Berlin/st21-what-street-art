@@ -1,7 +1,9 @@
 import React from 'react';
 import { IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonTitle } from '@ionic/react';
-import { settingsOutline } from 'ionicons/icons';
+import { personOutline } from 'ionicons/icons';
 import './Header.css';
+
+
 
 const Header: React.FC = () => {
 return (
@@ -9,9 +11,9 @@ return (
         <IonToolbar>
             <h1>What Street Art</h1>
 
-            <IonButtons slot="primary">
-                <IonButton href="/Settings">
-                    <IonIcon icon={settingsOutline}/>
+            <IonButtons slot="end">
+                <IonButton href="/Profile">
+                    <IonIcon icon={personOutline}/>
                 </IonButton>
             </IonButtons>
 
