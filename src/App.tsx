@@ -24,11 +24,13 @@ import { FirebaseAppProvider } from "reactfire";
 import { firebaseConfig } from "./config";
 import { Suspense } from "react";
 
+import Home from "./pages/Home";
+
 const App: React.FC = () => (
   <Suspense fallback={<div>Test</div>}>
     <IonApp>
       <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-        <Header />
+        <Home />
         <BottomMenu />
       </FirebaseAppProvider>
     </IonApp>
