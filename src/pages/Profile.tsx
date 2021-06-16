@@ -1,5 +1,5 @@
-import { IonContent, IonPage, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonAvatar } from '@ionic/react';
-import { heartOutline, bookmarkOutline, personOutline, exitOutline } from 'ionicons/icons';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonAvatar, IonChip } from '@ionic/react';
+import { pin, wifi, wine, warning, walk, heartOutline, bookmarkOutline, personOutline, exitOutline } from 'ionicons/icons';
 import ExploreContainer from '../components/ExploreContainer';
 import Header from '../components/Header';
 import './Profile.css';
