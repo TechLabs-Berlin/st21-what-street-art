@@ -9,19 +9,19 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import {
-  personCircleOutline,
   earthOutline,
-  homeOutline,
   cameraOutline,
   gridOutline,
   planetOutline,
 } from "ionicons/icons";
 /*{import Home from '../pages/Home';}*/
 import Map from "../pages/Map";
-import Galleries from "../pages/Galleries";
 import Camera from "../pages/Camera";
 import Profile from "../pages/Profile";
 import Explore from "../pages/Explore";
+
+import Settings from "../pages/Settings";
+
 import "@ionic/react/css/core.css";
 
 const BottomMenu: React.FC = () => {
@@ -34,16 +34,21 @@ const BottomMenu: React.FC = () => {
   {/*<Route exact path="/Home">
             <Home />
   </Route>*/}
+  {/* Settings */}
+  
+          <Route exact path="/Settings">
+            <Settings />
+          </Route>
 
           {/* Map */}
           <Route exact path="/Map">
             <Map />
           </Route>
 
-          {/* Galleries */}
+          {/* Galleries 
           <Route exact path="/Galleries">
             <Galleries />
-          </Route>
+          </Route> */}
 
           {/* Camera */}
           <Route path="/Camera">
@@ -59,6 +64,7 @@ const BottomMenu: React.FC = () => {
           <Route path="/Explore">
             <Explore />
           </Route>
+
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom">
@@ -69,17 +75,17 @@ const BottomMenu: React.FC = () => {
             <IonLabel>Home</IonLabel>
           </IonTabButton>/*/}
 
-          {/* Map */}
+          {/* Map */}       
           <IonTabButton tab="Map" href="/Map">
             <IonIcon icon={earthOutline} />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
 
-          {/* Galleries */}
+          {/* Galleries 
           <IonTabButton tab="Galleries" href="/Galleries">
             <IonIcon icon={gridOutline} />
             <IonLabel>Galleries</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
 
           {/* Camera */}
           <IonTabButton tab="Camera" href="/Camera">
@@ -88,10 +94,7 @@ const BottomMenu: React.FC = () => {
           </IonTabButton>
 
           {/* Profile */}
-          <IonTabButton tab="Profile" href="/Profile">
-            <IonIcon icon={personCircleOutline} />
-            <IonLabel>Profile</IonLabel>
-          </IonTabButton>
+            {/*Now located in Header.tsx}
 
           {/* Explore */}
           <IonTabButton tab="Explore" href="/Explore">
