@@ -21,8 +21,8 @@ const fetchUsers = async () => {
     country: item.country,
     age: item.age,
     gender: item.gender,
-    liked: Array(item.liked),
-    saved: Array(item.saved)
+    liked: item.liked,
+    saved: item.saved,
   }));
 
   await fs.outputFile(config.output, JSON.stringify(result, null, 2));
