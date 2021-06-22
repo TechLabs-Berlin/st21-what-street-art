@@ -18,8 +18,8 @@ const fetchUsers = async () => {
   const result = rawResult.map((item) => ({
     id: item.id,
     email: item.email,
-    country: item.country,
-    age: item.age,
+    country: item.country.replace("'", "").replace("'", ""),
+    age: Number(item.age),
     gender: item.gender,
     liked: item.liked.replace("[", "").replace("]", "").split(", "),
     saved: item.saved.replace("[", "").replace("]", "").split(", "),
