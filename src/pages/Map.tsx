@@ -1,18 +1,16 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import Header from '../components/Header';
-import './Map.css';
+import { IonContent, IonPage } from "@ionic/react";
+import Header from "../components/Header";
+import LeafletMap from "../components/LeafletMap";
 
 const Map: React.FC = () => {
   return (
     <IonPage>
       <Header />
-    <IonContent fullscreen>
-      <h1>Map</h1>
-      <ExploreContainer name="Map" />
-    </IonContent>
-  </IonPage>
-);
+      <IonContent fullscreen>
+        <LeafletMap />
+      </IonContent>
+    </IonPage>
+  );
 };
 
 export default Map;
