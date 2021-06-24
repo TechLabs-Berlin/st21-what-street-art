@@ -2,7 +2,7 @@ import { FC } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./LeafletMap.css";
 
-const position = { lat: 51.505, lng: -0.09 };
+const position = { lat: 52.5200, lng: 13.4050 };
 
 const LeafletMap: FC = () => {
   return (
