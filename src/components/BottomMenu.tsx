@@ -24,6 +24,10 @@ import Settings from "../pages/Settings";
 
 import "@ionic/react/css/core.css";
 
+import map from '../assets/map.svg'
+import './BottomMenu.css';
+
+
 const BottomMenu: React.FC = () => {
   return (
     <IonReactRouter>
@@ -77,7 +81,7 @@ const BottomMenu: React.FC = () => {
 
           {/* Map */}       
           <IonTabButton tab="Map" href="/Map">
-            <IonIcon icon={earthOutline} />
+            <img src={map} alt="Map" />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
 
