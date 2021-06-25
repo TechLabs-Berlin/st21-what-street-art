@@ -2,3 +2,12 @@
   height: 100vh;
   width: 100vw;
 }
+
+h4 {
+  color: rgb(255, 0, 149);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h6 {
+  font-style: italic;
+}
