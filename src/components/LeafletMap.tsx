@@ -20,9 +20,9 @@ const LeafletMap: FC = () => {
       position = {[artw["location/lat"], artw["location/lng"]]}>
           <Popup position = {[artw["location/lat"], artw["location/lng"]]}>
             <div>
-              <h4>
+              <h5 className = "artMarkerTitle">
                 {artw.title}
-              </h4>
+              </h5>
               <h6>
                 {artw["location/address"]}
               </h6>
