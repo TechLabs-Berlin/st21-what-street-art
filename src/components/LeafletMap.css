@@ -3,8 +3,10 @@
   width: 100vw;
 }
 
-h4 {
+.artMarkerTitle {
   color: rgb(255, 0, 149);
+  font-size: x-large;
+  font-weight: bold;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
