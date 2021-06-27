@@ -14,9 +14,12 @@ h6 {
 }
 
 .thumbnailContainer {
+  width: 30%;
+  height: 30%;
 }
 
 #thumbnail {
-  width: 150%;
-  height: 150%;
+  width: auto;
+
+  height: auto;
 }
