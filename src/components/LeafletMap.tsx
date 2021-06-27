@@ -26,12 +26,9 @@ const LeafletMap: FC = () => {
               <h6>
                 {artw["location/address"]}
               </h6>
-              <div> 
-              <img id="thumbnail" src={artw.thumbnail}></img>
-              
+              <div className = "thumbnailContainer"> 
+                	<img id="thumbnail" src={artw.thumbnail}></img>
               </div>
-              
-              
             </div>
           </Popup>
 
