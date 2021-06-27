@@ -5,11 +5,18 @@
 
 .artMarkerTitle {
   color: rgb(255, 0, 149);
-  font-size: x-large;
   font-weight: bold;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 h6 {
   font-style: italic;
+}
+
+.thumbnailContainer {
+}
+
+#thumbnail {
+  width: 150%;
+  height: 150%;
 }
