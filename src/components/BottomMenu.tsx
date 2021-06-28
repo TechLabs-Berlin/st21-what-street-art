@@ -16,7 +16,7 @@ import {
 } from "ionicons/icons";
 /*{import Home from '../pages/Home';}*/
 import Map from "../pages/Map";
-import Camera from "../pages/Camera";
+import Scan from "../pages/Scan";
 import Profile from "../pages/Profile";
 import Explore from "../pages/Explore";
 
@@ -54,9 +54,9 @@ const BottomMenu: React.FC = () => {
             <Galleries />
           </Route> */}
 
-          {/* Camera */}
-          <Route path="/Camera">
-            <Camera />
+          {/* Scan */}
+          <Route path="/Scan">
+            <Scan />
           </Route>
 
           {/* Profile */}
@@ -91,10 +91,10 @@ const BottomMenu: React.FC = () => {
             <IonLabel>Galleries</IonLabel>
           </IonTabButton> */}
 
-          {/* Camera */}
-          <IonTabButton tab="Camera" href="/Camera">
+          {/* Scan */}
+          <IonTabButton tab="Scan" href="/Scan">
             <IonIcon icon={cameraOutline} />
-            <IonLabel>Camera</IonLabel>
+            <IonLabel>Scan</IonLabel>
           </IonTabButton>
 
           {/* Profile */}

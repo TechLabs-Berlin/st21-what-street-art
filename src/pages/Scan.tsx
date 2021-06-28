@@ -3,11 +3,11 @@ import { IonContent, IonPage, IonTitle, IonToolbar, IonFab, IonFabButton, IonIco
 import { cameraOutline, trash, close } from 'ionicons/icons'
 import ExploreContainer from '../components/ExploreContainer';
 import Header from '../components/Header';
-import './Camera.css';
+import './Scan.css';
 import { usePhotoGallery, UserPhoto } from "../hooks/usePhotoGallery";
 
 
-const Camera: React.FC = () => {
+const Scan: React.FC = () => {
   const { photos, takePhoto, deletePhoto } = usePhotoGallery()
   const [photoToDelete, setPhotoToDelete] = useState<UserPhoto>();
 
@@ -53,6 +53,4 @@ const Camera: React.FC = () => {
   );
 };
 
-export default Camera;
-
-// Possible camera code: https://ionicframework.com/docs/vue/your-first-app
+export default Scan;
