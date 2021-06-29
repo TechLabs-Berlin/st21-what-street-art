@@ -33,7 +33,7 @@ export const Home: React.FC = () => {
   return (
     <IonPage>
       <Header />
-      <IonContent>
+      <IonContent color="dark">
         <AssetSlider title="Popular" data={popularArtworksData} />
         <AssetSlider title="Recently Added" data={recentArtworksData} />
         <AssetSlider title="Near you" data={popularArtworksData} />

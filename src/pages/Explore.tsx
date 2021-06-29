@@ -7,7 +7,7 @@ const Explore: React.FC = () => {
   return (
         <IonPage>
           <Header />
-          <IonContent fullscreen>
+          <IonContent fullscreen color="dark">
             <IonText>
             <h1>Explore</h1>
             </IonText>

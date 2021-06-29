@@ -6,7 +6,7 @@ const Map: React.FC = () => {
   return (
     <IonPage>
       <Header />
-      <IonContent fullscreen>
+      <IonContent fullscreen color="dark">
         <LeafletMap />
       </IonContent>
     </IonPage>
