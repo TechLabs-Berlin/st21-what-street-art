@@ -2,3 +2,7 @@ img {
   width: 25px;
   height: 25px;
 }
+
+ion-tab-bar {
+  opacity: 88%;
+}
