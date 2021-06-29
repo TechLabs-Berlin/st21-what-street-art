@@ -24,7 +24,11 @@ import Settings from "../pages/Settings";
 
 import "@ionic/react/css/core.css";
 
-import map from '../assets/map.svg'
+import map from '../assets/map.svg';
+import explore from '../assets/explore.svg';
+import camera from '../assets/camera.svg';
+import home from '../assets/home.svg';
+
 import './BottomMenu.css';
 
 
@@ -73,38 +77,31 @@ const BottomMenu: React.FC = () => {
 
         <IonTabBar slot="bottom" color="dark">
           {/* Tabs */}
-          {/* Home 
-  <IonTabButton tab="Home" href="/Home">
-            <IonIcon icon={homeOutline} />
-            <IonLabel>Home</IonLabel>
-          </IonTabButton>/*/}
 
-          {/* Map */}       
-          <IonTabButton tab="Map" href="/Map">
+          {/* Home */}
+          <IonTabButton tab="Home" href="/Home">
+            <img src={home} alt="Home" />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
+
+          {/* Map */}
+           <IonTabButton tab="Map" href="/Map">
             <img src={map} alt="Map" />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
-
-          {/* Galleries 
-          <IonTabButton tab="Galleries" href="/Galleries">
-            <IonIcon icon={gridOutline} />
-            <IonLabel>Galleries</IonLabel>
-          </IonTabButton> */}
-
+     
           {/* Scan */}
           <IonTabButton tab="Scan" href="/Scan">
-            <IonIcon icon={cameraOutline} />
+            <img src={camera} alt="Scan" />
             <IonLabel>Scan</IonLabel>
           </IonTabButton>
 
-          {/* Profile */}
-            {/*Now located in Header.tsx}
-
           {/* Explore */}
-          <IonTabButton tab="Explore" href="/Explore">
-            <IonIcon icon={planetOutline} />
+         <IonTabButton tab="Explore" href="/Explore">
+            <img src={explore} alt="Explore" />
             <IonLabel>Explore</IonLabel>
           </IonTabButton>
+        
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
