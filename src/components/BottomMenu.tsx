@@ -71,7 +71,7 @@ const BottomMenu: React.FC = () => {
 
         </IonRouterOutlet>
 
-        <IonTabBar slot="bottom">
+        <IonTabBar slot="bottom" color="dark">
           {/* Tabs */}
           {/* Home 
   <IonTabButton tab="Home" href="/Home">
