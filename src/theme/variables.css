@@ -1,12 +1,13 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
-
+/** Removes scrollbar **/
 ion-content {
   width: calc(100% + 15px);
 }
 ion-content::part(scroll) {
   padding-right: 15px;
 }
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
