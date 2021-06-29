@@ -4,6 +4,7 @@ import { personOutline } from 'ionicons/icons';
 import './Header.css';
 
 import user from '../assets/user.svg';
+import logoNavBar from '../assets/logoNavBar.svg';
 
 
 
@@ -11,11 +12,12 @@ const Header: React.FC = () => {
 return (
     <IonHeader>
         <IonToolbar color="dark">
-            <h1>What Street Art</h1>
+            
+                <img className = "logo-full" src = {logoNavBar} alt="Logo"/>      
 
             <IonButtons slot="end">
-                <IonButton>
-                <img src={user} alt="User" />
+                <IonButton href="/Profile">
+                <img src={user} alt="Profile" ></img>
                 </IonButton>
             </IonButtons>
 
@@ -27,3 +29,4 @@ return (
 
 
 export default Header;
+
