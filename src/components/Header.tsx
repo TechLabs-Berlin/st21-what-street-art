@@ -3,6 +3,8 @@ import { IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonTitle } from 
 import { personOutline } from 'ionicons/icons';
 import './Header.css';
 
+import user from '../assets/user.svg';
+
 
 
 const Header: React.FC = () => {
@@ -12,8 +14,8 @@ return (
             <h1>What Street Art</h1>
 
             <IonButtons slot="end">
-                <IonButton href="/Profile">
-                    <IonIcon icon={personOutline}/>
+                <IonButton>
+                <img src={user} alt="User" />
                 </IonButton>
             </IonButtons>
 
