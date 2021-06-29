@@ -1,3 +1,14 @@
+ionic-header,
+ionic-toolbar {
+  width: 4rem;
+  height: 10rem;
+}
+
+.logo-full {
+  width: 80%;
+  height: 80%;
+}
+
 h1 {
   text-align: center;
 }
