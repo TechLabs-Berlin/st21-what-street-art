@@ -1,13 +1,14 @@
 import {
-  useFirestoreDocData,
   useFirestore,
   useFirestoreCollectionData,
+  useFirestoreDocData,
 } from "reactfire";
+import useSWR from "swr";
+
+import { getNearYou } from "../api";
 import { Artwork } from "../models/artwork";
 import { FilteringCriteria, FirebaseCollection } from "../models/firebase";
 import useGeolocation from "./useGeolocation";
-import useSWR from "swr";
-import { Coordinates } from "../models/location";
 
 export const useArtworks = () => {
   const artworksRef = useFirestore().collection(FirebaseCollection.artworks);
@@ -17,28 +18,14 @@ export const useArtworks = () => {
   return data;
 };
 
-const fetcher = async (url: string, lat: number, lng: number) => {
-  const rawResponse = await fetch(`${url}?lat=${lat}&lng=${lng}`);
-
-  const response = rawResponse.json();
-
-  return response;
-};
-
 export const useNearYouArtworks = () => {
   // TODO: Use queries to filter which IDs we want
   const artworks = useArtworks();
 
   const currentLocation = useGeolocation();
-
-  // TODO: Use Darina's API
   const { data } = useSWR<Artwork[]>(
-    [
-      "https://raw.githubusercontent.com/ythecombinator/wsa-server-mock/main/db.json",
-      currentLocation.lat,
-      currentLocation.lng,
-    ],
-    fetcher,
+    [currentLocation.lat, currentLocation.lng],
+    getNearYou,
     {
       suspense: true,
     }
