@@ -5,7 +5,8 @@ export interface Artwork {
   id: string;
   likes: number;
   location: Location;
-  link: string;
+  image: string;
   artist: string;
   title: string;
+  thumbnail: string;
 }

@@ -30,7 +30,7 @@ export const AssetSlider: React.FC<Props> = (props) => {
         >
           {data.map((item) => (
             <SwiperSlide>
-              <img src={item.link} />
+              <img src={item.image} />
               <div className="info-block">
                 <text className="image-title">{item.title}</text>
                 <br></br>
