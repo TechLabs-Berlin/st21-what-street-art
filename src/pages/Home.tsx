@@ -17,8 +17,6 @@ import './Home.css';
 SwiperCore.use([Pagination]);
 
 
-
-
 export const Home: React.FC = () => {
   const popularArtworksData = usePopularArtworks({
     limit: 9,

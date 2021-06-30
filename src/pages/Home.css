@@ -17,7 +17,7 @@
   }
   
   h4 {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 91, 187);
     margin: 1rem;
     padding: 0;
     font-size: 20px;
@@ -81,7 +81,6 @@
   }
     
   
-  
   .imgDetails {
     display: block;
     bottom: 4px;
@@ -105,5 +104,4 @@
   .swiper-slide:nth-child(3n) {
     width: 100%;
   }
-  
   
