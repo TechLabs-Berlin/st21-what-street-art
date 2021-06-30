@@ -2,38 +2,32 @@ import { FC } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./LeafletMap.css";
 
-import ArtSites from "../data/artworkLocations.json";
-
 import { Icon } from "leaflet";
 import markerIcon from "../assets/markerIcon.png";
 import shadow from "../assets/shadow.png";
-import useGeolocation from "../hooks/useGeolocation";
+import { Artwork } from "../models/artwork";
 
-{
-  /* Geolocation */
-}
-
-{
-  /* Geolocation */
-}
-
-{
-  /* Starting position of Map */
-}
+/* Starting position of Map */
 const position = { lat: 52.52, lng: 13.405 };
 
-const LeafletMap: FC = () => {
-  const location = useGeolocation();
-  console.log(location);
+interface Props {
+  markers: Artwork[];
+}
+
+const LeafletMap: FC<Props> = (props) => {
+  const { markers } = props;
 
   return (
     <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {ArtSites.map((artw) => (
+      {markers.map((marker) => (
         <Marker
-          key={artw.id}
-          position={[artw["location/lat"], artw["location/lng"]]}
+          key={marker.id}
+          position={[
+            Number(marker.location.coordinates.lat),
+            Number(marker.location.coordinates.lng),
+          ]}
           icon={
             new Icon({
               iconUrl: markerIcon,
@@ -45,12 +39,17 @@ const LeafletMap: FC = () => {
             })
           }
         >
-          <Popup position={[artw["location/lat"], artw["location/lng"]]}>
+          <Popup
+            position={[
+              Number(marker.location.coordinates.lat),
+              Number(marker.location.coordinates.lng),
+            ]}
+          >
             <div>
-              <h5 className="artMarkerTitle">{artw.title}</h5>
-              <h6>{artw["location/address"]}</h6>
+              <h5 className="artMarkerTitle">{marker.title}</h5>
+              <h6>{marker.location.address}</h6>
               <div className="thumbnailContainer">
-                <img id="thumbnail" src={artw.thumbnail}></img>
+                <img id="thumbnail" src={marker.thumbnail}></img>
               </div>
             </div>
           </Popup>
