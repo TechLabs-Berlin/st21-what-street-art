@@ -6,6 +6,8 @@ import "./AssetSlider.css";
 import SwiperCore, { Pagination } from "swiper/core";
 import { Artwork } from "../models/artwork";
 
+
+
 SwiperCore.use([Pagination]);
 
 interface Props {
@@ -28,7 +30,7 @@ export const AssetSlider: React.FC<Props> = (props) => {
         >
           {data.map((item) => (
             <SwiperSlide>
-              <img src="https://velvetescape.com/wp-content/uploads/2018/02/IMG_4081-1280x920.jpg" />
+              <img src="{{href}}" />
               <div className="info-block">
                 <text className="image-title">{item.likes}</text>
                 <br></br>
