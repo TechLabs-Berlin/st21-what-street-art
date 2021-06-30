@@ -32,9 +32,9 @@ export const AssetSlider: React.FC<Props> = (props) => {
             <SwiperSlide>
               <img src={item.link} />
               <div className="info-block">
-                <text className="image-title">{item.likes}</text>
+                <text className="image-title">{item.title}</text>
                 <br></br>
-                <text className="image-artist">{item.location.address}</text>
+                <text className="image-artist">{item.artist}</text>
               </div>
             </SwiperSlide>
           ))}

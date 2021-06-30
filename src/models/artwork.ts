@@ -6,4 +6,6 @@ export interface Artwork {
   likes: number;
   location: Location;
   link: string;
+  artist: string;
+  title: string;
 }
