@@ -25,17 +25,18 @@ const fetcher = async (url: string, lat: number, lng: number) => {
   return response;
 };
 
-export const useNearYou = () => {
+export const useNearYouArtworks = () => {
   // TODO: Use queries to filter which IDs we want
   const artworks = useArtworks();
-  // TODO: Update useGeolocation to use promises
+
   const currentLocation = useGeolocation();
+
   // TODO: Use Darina's API
   const { data } = useSWR<Artwork[]>(
     [
       "https://raw.githubusercontent.com/ythecombinator/wsa-server-mock/main/db.json",
-      52.4973747,
-      13.3304725,
+      currentLocation.lat,
+      currentLocation.lng,
     ],
     fetcher,
     {
@@ -43,7 +44,7 @@ export const useNearYou = () => {
     }
   );
 
-  const ids = data?.map((item) => `${item.id}`);
+  const ids = data?.map((item) => String(item.id));
   const result = artworks?.filter((artwork) => ids?.includes(artwork.id));
 
   return result;

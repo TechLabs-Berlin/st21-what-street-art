@@ -4,7 +4,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import Header from "../components/Header";
 import SwiperCore, { Pagination } from "swiper/core";
-import { usePopularArtworks, useNearYou } from "../hooks/artworks";
+import { usePopularArtworks, useNearYouArtworks } from "../hooks/artworks";
 import AssetSlider from "../components/AssetSlider";
 
 import "./Home.css";
@@ -23,7 +23,7 @@ export const Home: React.FC = () => {
     property: "dateAdded",
   });
 
-  const nearYouArtworksData = useNearYou();
+  const nearYouArtworksData = useNearYouArtworks();
 
   return (
     <IonPage>
