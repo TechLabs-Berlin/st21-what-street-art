@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 
-/*{import Home from '../pages/Home';}*/
+import Home from '../pages/Home';
 import Map from "../pages/Map";
 import Scan from "../pages/Scan";
 import Profile from "../pages/Profile";
@@ -32,13 +32,13 @@ const BottomMenu: React.FC = () => {
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          {/* Routes */}
-          {/* Home
-  {/*<Route exact path="/Home">
+        {/* Routes */}
+          {/* Home */}
+          <Route exact path="/Home">
             <Home />
-  </Route>*/}
-  {/* Settings */}
+          </Route>
   
+          {/* Settings */}
           <Route exact path="/Settings">
             <Settings />
           </Route>
@@ -66,8 +66,8 @@ const BottomMenu: React.FC = () => {
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom" color="dark">
+          
           {/* Tabs */}
-
           {/* Home */}
           <IonTabButton tab="Home" href="/Home">
             <img src={home} alt="Home" />
