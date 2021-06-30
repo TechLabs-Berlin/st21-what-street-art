@@ -1,21 +1,16 @@
 import React, { useRef, useState } from "react";
-import {
-  IonContent,
-  IonPage
-} from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import Header from "../components/Header";
 import SwiperCore, { Pagination } from "swiper/core";
-import { usePopularArtworks } from "../hooks/artworks";
+import { usePopularArtworks, useNearYou } from "../hooks/artworks";
 import AssetSlider from "../components/AssetSlider";
 
-import './Home.css';
-
+import "./Home.css";
 
 // install Swiper modules
 SwiperCore.use([Pagination]);
-
 
 export const Home: React.FC = () => {
   const popularArtworksData = usePopularArtworks({
@@ -28,13 +23,15 @@ export const Home: React.FC = () => {
     property: "dateAdded",
   });
 
+  const nearYouArtworksData = useNearYou();
+
   return (
     <IonPage>
       <Header />
       <IonContent color="dark">
         <AssetSlider title="Popular" data={popularArtworksData} />
         <AssetSlider title="Recently Added" data={recentArtworksData} />
-        <AssetSlider title="Near you" data={popularArtworksData} />
+        <AssetSlider title="Near you" data={nearYouArtworksData} />
       </IonContent>
     </IonPage>
   );
