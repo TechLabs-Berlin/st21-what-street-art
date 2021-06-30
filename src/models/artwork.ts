@@ -5,5 +5,5 @@ export interface Artwork {
   id: string;
   likes: number;
   location: Location;
-  href: string;
+  link: string;
 }
