@@ -30,7 +30,7 @@ export const AssetSlider: React.FC<Props> = (props) => {
         >
           {data.map((item) => (
             <SwiperSlide>
-              <img src="{{href}}" />
+              <img src={item.link} />
               <div className="info-block">
                 <text className="image-title">{item.likes}</text>
                 <br></br>
