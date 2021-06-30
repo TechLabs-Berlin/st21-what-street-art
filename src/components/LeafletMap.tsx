@@ -4,6 +4,13 @@ import "./LeafletMap.css";
 
 import ArtSites from "../data/artworkLocations.json";
 
+import {Icon} from 'leaflet'
+import markerIcon from "../assets/markerIcon.png"
+import shadow from "../assets/shadow.png"
+
+
+
+
 const position = { lat: 52.5200, lng: 13.4050 };
 
 const LeafletMap: FC = () => {
@@ -17,7 +24,16 @@ const LeafletMap: FC = () => {
       {ArtSites.map(artw => (
       <Marker 
       key = {artw.id}
-      position = {[artw["location/lat"], artw["location/lng"]]}>
+      position = {[artw["location/lat"], artw["location/lng"]]}
+      icon = {new Icon({
+        iconUrl: markerIcon,
+        iconSize: [25, 41],
+        shadowUrl: shadow,
+        shadowSize: [41, 41],
+        iconAnchor: [12, 41],
+	      popupAnchor: [1, -34]
+        })}>
+     
           <Popup position = {[artw["location/lat"], artw["location/lng"]]}>
             <div>
               <h5 className = "artMarkerTitle">
@@ -31,8 +47,6 @@ const LeafletMap: FC = () => {
               </div>
             </div>
           </Popup>
-
-
       </Marker>
 
     ))}
