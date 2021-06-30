@@ -9,4 +9,5 @@ export interface Artwork {
   artist: string;
   title: string;
   thumbnail: string;
+  distance?: number;
 }

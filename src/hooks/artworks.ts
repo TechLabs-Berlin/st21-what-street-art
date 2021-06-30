@@ -32,7 +32,12 @@ export const useNearYouArtworks = () => {
   );
 
   const ids = data?.map((item) => String(item.id));
-  const result = artworks?.filter((artwork) => ids?.includes(artwork.id));
+  const result = artworks
+    ?.filter((artwork) => ids?.includes(artwork.id))
+    .map((artwork) => ({
+      ...artwork,
+      distance: data?.find((item) => String(item.id) === artwork.id)?.distance,
+    }));
 
   return result;
 };
