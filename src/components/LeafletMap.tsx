@@ -8,9 +8,13 @@ import {Icon} from 'leaflet'
 import markerIcon from "../assets/markerIcon.png"
 import shadow from "../assets/shadow.png"
 
+{/* Geolocation */}
+import useGeolocation from "../hooks/useGeolocation";
 
+{/* Geolocation */}
+const location = useGeolocation();
 
-
+{/* Starting position of Map */}
 const position = { lat: 52.5200, lng: 13.4050 };
 
 const LeafletMap: FC = () => {
