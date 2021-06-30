@@ -8,12 +8,7 @@ import {
   IonTabs,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import {
-  earthOutline,
-  cameraOutline,
-  gridOutline,
-  planetOutline,
-} from "ionicons/icons";
+
 /*{import Home from '../pages/Home';}*/
 import Map from "../pages/Map";
 import Scan from "../pages/Scan";
@@ -52,11 +47,6 @@ const BottomMenu: React.FC = () => {
           <Route exact path="/Map">
             <Map />
           </Route>
-
-          {/* Galleries 
-          <Route exact path="/Galleries">
-            <Galleries />
-          </Route> */}
 
           {/* Scan */}
           <Route path="/Scan">
