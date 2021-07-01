@@ -58,7 +58,7 @@ model = create_model()
 model.load_weights('ResNet50/weights_160epochs.pkl')
 
 
-@app.route('/AI_Models_predictions', methods=['GET'])
+@app.route('/AI_Models_predictions', methods=['PUT'])
 def make_prediction():
     input_image = request.files('file') #TODO or however this connects exactly
     input_image = preprocess_input(input_image)
@@ -66,7 +66,7 @@ def make_prediction():
 
     return jsonify(prediction)
 
-@app.route('/AI_Models_similars', methods=['GET'])
+@app.route('/AI_Models_similars', methods=['PUT'])
 def similar_artworks():
     input_image = request.files('file')  # TODO or however this connects exactly
     input_image = preprocess_input(input_image)
