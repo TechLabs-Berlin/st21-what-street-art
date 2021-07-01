@@ -30,7 +30,7 @@ user_items = sparse.csr_matrix((likes_dense['user_likes'].astype(float), (likes_
 item_users = sparse.csr_matrix((likes_dense['user_likes'].astype(float), (likes_dense['artwork_id'], likes_dense['user_id'])))
 
 # ALS model:
-model = implicit.als.AlternatingLeastSquares(factors=20, regularization=0.1, iterations=20)
+model = implicit.als.AlternatingLeastSquares(factors=20, regularization=0.1, iterations=20, random_state=42)
 alpha_val = 15
 data_conf = (item_users * alpha_val).astype('double')
 model.fit(data_conf)
