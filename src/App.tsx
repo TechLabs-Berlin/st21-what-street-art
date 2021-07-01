@@ -1,6 +1,12 @@
-import { IonApp } from "@ionic/react";
+import { IonApp, IonSpinner, IonRouterOutlet } from "@ionic/react";
 import BottomMenu from "./components/BottomMenu";
 import Header from "./components/Header";
+import { IonReactRouter } from "@ionic/react-router";
+import { FirebaseAppProvider } from "reactfire";
+import { firebaseConfig } from "./config";
+import { Suspense } from "react";
+
+import Home from "./pages/Home";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -20,21 +26,29 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import { FirebaseAppProvider } from "reactfire";
-import { firebaseConfig } from "./config";
-import { Suspense } from "react";
 
-import Home from "./pages/Home";
+// Cleaned the code a bit. Changed the suspense to the spinning weel but not sure yet if we add a css to the app and place it centered or we add the code directly to this file. Added routes to the pages, know the Profile is loading faster but still, when coming back from Profile it takes a lot to load, as the app is loading from the start.
 
-const App: React.FC = () => (
-  <Suspense fallback={<div>Test</div>}>
+
+
+const App: React.FC = () => {
+  return (
     <IonApp>
-      <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-        <Home />
-        <BottomMenu />
-      </FirebaseAppProvider>
+      <Suspense fallback={<div className="ion-text-center">
+        <IonSpinner name="crescent"> </IonSpinner>
+      </div>}>
+        <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+          <IonReactRouter>
+            <IonRouterOutlet>
+              <Header />
+              <Home />
+              <BottomMenu />
+            </IonRouterOutlet>
+          </IonReactRouter>
+        </FirebaseAppProvider>
+      </Suspense>
     </IonApp>
-  </Suspense>
-);
+  );
+};
 
 export default App;
