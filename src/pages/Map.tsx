@@ -9,7 +9,7 @@ const Map: React.FC = () => {
   return (
     <IonPage>
       <Header />
-      <IonContent fullscreen color="dark">
+      <IonContent fullscreen>
         <LeafletMap markers={data} />
       </IonContent>
     </IonPage>

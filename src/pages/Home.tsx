@@ -23,12 +23,13 @@ export const Home: React.FC = () => {
     property: "dateAdded",
   });
 
+  // Later we need to limit to 9
   const nearYouArtworksData = useNearYouArtworks();
 
   return (
     <IonPage>
       <Header />
-      <IonContent color="dark">
+      <IonContent>
         <AssetSlider title="Popular" data={popularArtworksData} />
         <AssetSlider title="Recently Added" data={recentArtworksData} />
         <AssetSlider title="Near you" data={nearYouArtworksData} />

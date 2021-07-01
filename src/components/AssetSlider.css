@@ -34,7 +34,7 @@ h4 {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: rgb(34, 37, 40);
+  background: rgb(0, 0, 0);
 
   /* Center slide text vertically */
   display: -webkit-box;

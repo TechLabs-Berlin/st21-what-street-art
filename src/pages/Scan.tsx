@@ -14,7 +14,7 @@ const Scan: React.FC = () => {
   return (
     <IonPage>
       <Header />
-      <IonContent fullscreen color="dark">
+      <IonContent fullscreen>
         <IonGrid>
           <IonRow>
           {photos.map((photo, index) => (

@@ -11,7 +11,7 @@ import logoNavBar from '../assets/logoNavBar.svg';
 const Header: React.FC = () => {
 return (
     <IonHeader>
-        <IonToolbar color="dark">
+        <IonToolbar>
             
                 <img className = "logo-full" src = {logoNavBar} alt="Logo"/>      
 
