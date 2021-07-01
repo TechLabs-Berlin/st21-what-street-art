@@ -1,7 +1,37 @@
-.avatar {
-  margin: auto;
+.yourProfile {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+  font-size: 32px;
+}
+
+ion-avatar img {
+  padding-bottom: 10%;
+  width: 120px !important;
+  height: 120px !important;
+  max-width: 160px !important;
+  max-height: 160px !important;
+}
+
+.editProfile {
+  position: absolute;
+  left: 59%;
+  right: 5%;
+  top: 5%;
+  --border-color: rgba(0, 0, 0, 0);
+}
+
+ion-card {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+  height: 20vh;
+  margin: 0 !important;
 }
 
 .profileName {
-  text-align: center;
+  display: flex;
+  left: 10%;
+  justify-content: center;
+  font-size: 22px;
 }

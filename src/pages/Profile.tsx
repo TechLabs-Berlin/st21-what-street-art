@@ -1,6 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonAvatar, IonChip } from '@ionic/react';
-import { pin, wifi, wine, warning, walk, heartOutline, bookmarkOutline, personOutline, exitOutline } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonPage, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonItem, IonIcon, IonLabel, IonButton, IonAvatar, IonGrid, IonRow, IonCol } from '@ionic/react';
+import { heartOutline, bookmarkOutline, personOutline, exitOutline, createOutline } from 'ionicons/icons';
 import Header from '../components/Header';
 import './Profile.css';
 
@@ -9,20 +8,18 @@ const Profile: React.FC = () => {
     <IonPage>
       <Header />
       <IonContent>
+        <h1 className="yourProfile">Your Profile</h1>
         <IonCard>
-          <IonCardHeader>
+          <IonCardContent>
             <IonAvatar class="avatar">
       <img src="https://ca.slack-edge.com/T6QB33X0T-U01RJ95D74Z-45314715827d-512" />
       </IonAvatar>
-            <IonCardTitle class="profileName">Anna Lebedenko</IonCardTitle>
-            <IonCardSubtitle class="profileName">@annalebedenko</IonCardSubtitle>
-          </IonCardHeader>
-          <IonCardContent>
-            Keep close to Nature's heart... and break clear away, once in awhile,
-            and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </IonCardContent>
+              <IonButton strong className="editProfile" fill="outline" size="default" href="/Profile">Edit Profile<IonIcon icon={createOutline} slot="end" />
+              </IonButton>
+             <IonCardTitle class="profileName">@annalebedenko</IonCardTitle>
+          </IonCardContent>
         </IonCard>
-
+{/* 
         <IonCard>
           <IonItem>
             <IonIcon icon={heartOutline} slot="start" />
@@ -44,7 +41,7 @@ const Profile: React.FC = () => {
             <IonIcon icon={exitOutline} slot="start" />
             <IonLabel>Log Out</IonLabel>
           </IonItem>
-        </IonCard>
+        </IonCard> */}
       </IonContent>
     </IonPage>
   );
