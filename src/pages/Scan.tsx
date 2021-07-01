@@ -25,7 +25,7 @@ const Scan: React.FC = () => {
           </IonRow>
         </IonGrid>
         <IonFab vertical="bottom" horizontal="center" slot="fixed">
-          <IonFabButton color="light" onClick={() => takePhoto()}>
+          <IonFabButton color="dark" onClick={() => takePhoto()}>
             <IonIcon class="camera" icon={radioButtonOffOutline}></IonIcon>
           </IonFabButton>
         </IonFab>
