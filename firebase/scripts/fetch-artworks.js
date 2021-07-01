@@ -19,6 +19,8 @@ const fetchArtworks = async () => {
     id: item.id,
     source: item.source,
     link: item.href,
+    thumbnail: item.thumbnail,
+    image: item.images_0_url,
     title: item.title,
     artist: item.artistsString,
     description: item.description_en,
