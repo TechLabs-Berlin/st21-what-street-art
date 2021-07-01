@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { IonContent, IonPage } from "@ionic/react";
+import { IonContent, IonPage, useIonViewDidEnter, useIonViewDidLeave } from "@ionic/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import Header from "../components/Header";
@@ -13,6 +13,7 @@ import "./Home.css";
 SwiperCore.use([Pagination]);
 
 export const Home: React.FC = () => {
+  
   const popularArtworksData = usePopularArtworks({
     limit: 9,
     property: "likes",
@@ -26,6 +27,21 @@ export const Home: React.FC = () => {
   // Later we need to limit to 9
   const nearYouArtworksData = useNearYouArtworks();
 
+  // Optimizing Page Renders
+  const [isVisible , setIsVisible] = useState(true);
+
+  useIonViewDidEnter(() => {
+    console.log("useIonViewDidEnter");
+    setIsVisible(true);
+  });
+
+  useIonViewDidLeave(() => {
+    console.log("useIonViewDidLeave")
+    setIsVisible(false);
+  }); 
+
+  if (!isVisible) return null;
+
   return (
     <IonPage>
       <Header />
@@ -38,4 +54,5 @@ export const Home: React.FC = () => {
   );
 };
 
-export default Home;
+// The memo uses the memory to render less
+export default React.memo(Home);
