@@ -21,7 +21,7 @@ export const AssetSlider: React.FC<Props> = (props) => {
       <h4>{title}</h4>
       <div>
         <Swiper
-          slidesPerView={2}
+          slidesPerView={2.5}
           spaceBetween={-10}
           loop={false}
           className="mySwiper1"
