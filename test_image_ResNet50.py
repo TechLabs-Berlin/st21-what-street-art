@@ -41,7 +41,7 @@ def predict_image(model, img_preprocessed):
     return prediction
 
 
-def similar_artworks(model, img_preprocessed):
+def calculate_similars(model, img_preprocessed):
     prediction = model.predict(img_preprocessed)
     imgPreds = pd.DataFrame(prediction)
     imgPreds = imgPreds.sort_values(by=0, axis=1)
@@ -58,7 +58,7 @@ model = create_model()
 model.load_weights('ResNet50/weights_160epochs.pkl')
 
 
-@app.route('/AI_Models', methods=['GET'])
+@app.route('/AI_Models_predictions', methods=['GET'])
 def make_prediction():
     input_image = request.args('img') #TODO or however this connects exactly
     input_image = preprocess_input(input_image)
@@ -66,11 +66,11 @@ def make_prediction():
 
     return jsonify(prediction)
 
-@app.route('/AI_Models', methods=['GET'])
+@app.route('/AI_Models_similars', methods=['GET'])
 def similar_artworks():
     input_image = request.args('img')  # TODO or however this connects exactly
     input_image = preprocess_input(input_image)
-    similar_images = similar_artworks(model, input_image)
+    similar_images = calculate_similars(model, input_image)
 
     return jsonify(similar_images)
 
