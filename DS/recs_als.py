@@ -1,48 +1,72 @@
-from itertools import chain
 import pandas as pd
-import numpy as np
+import os
 import implicit
 import scipy.sparse as sparse
-
+from flask import Flask, jsonify, request
 
 users = pd.read_csv('users.csv', converters={'liked': eval})
-# print(users.info())
-# print(users.liked)
-# print(type(users.liked[0]))
 
 data = [users['id'], users['liked']]
 headers = ['user_id', 'artworks']
 likes = pd.concat(data, axis=1, keys=headers)
-# print(likes)
-# print(likes.artworks[0])
-# print(type(likes.artworks[0]))
+
+likes_dense = likes.artworks.apply(pd.Series) \
+    .merge(likes, right_index = True, left_index = True) \
+    .drop(["artworks"], axis = 1) \
+    .melt(id_vars = ['user_id'], value_name = "artwork_id") \
+    .drop("variable", axis=1)
+
+likes_dense['user_likes'] = '1'
+
+likes_dense['user_id'] = likes_dense['user_id'].astype("category").cat.codes
+likes_dense['artwork_id'] = likes_dense['artwork_id'].astype("category").cat.codes
+
+#To avoid multithreading:
+os.environ['MKL_NUM_THREADS'] = '1'
+os.environ['OPENBLAS_NUM_THREADS'] = '1'
+
+# item_users and user_items sparse matrices:
+user_items = sparse.csr_matrix((likes_dense['user_likes'].astype(float), (likes_dense['user_id'], likes_dense['artwork_id'])))
+item_users = sparse.csr_matrix((likes_dense['user_likes'].astype(float), (likes_dense['artwork_id'], likes_dense['user_id'])))
+
+# ALS model:
+model = implicit.als.AlternatingLeastSquares(factors=20, regularization=0.1, iterations=20)
+alpha_val = 15
+data_conf = (item_users * alpha_val).astype('double')
+model.fit(data_conf)
 
 
-X = [set(art) for art in likes.artworks]
-Y = list(set(chain.from_iterable(X)))
-liked_matrix = []
-for id_, rec in likes.iterrows():
-    row = {
-        "user_id": rec.user_id,
-          }
-    for each_art in Y:
-        if each_art in rec.artworks:
-             row[f"art_{each_art}"] = 1.0
-    liked_matrix.append(row)
-liked_matrix = pd.DataFrame(liked_matrix)
-liked_matrix = liked_matrix.set_index('user_id').fillna(0)
-print(liked_matrix)
-print(type(liked_matrix))
-print(liked_matrix.info())
+def get_list_of_dict(keys, list_of_tuples):
+    list_of_dict = [dict(zip(keys, values)) for values in list_of_tuples]
+    return list_of_dict
 
-# creating a sparse matrix
-liked_matrix_sparse = sparse.csr_matrix(liked_matrix.values)
-print(liked_matrix_sparse)
+keys = ("id", "confidence")
+
+# Find similar artworks:
+art_id = 25
+print(type(art_id))
+n_similar = 5
+similar = model.similar_items(art_id, n_similar)
+print(get_list_of_dict(keys, similar))
+
+# app = Flask(__name__)
+#
+# @app.route('/recs', methods = ['GET'])
+# def recs():
+#     art_id = request.args['art']
+#     n_similar = 5
+#     similar = model.similar_items(art_id, n_similar)
+#     response = (get_list_of_dict(keys, similar))
+#     response.headers.add("Access-Control-Allow-Origin", "*")
+#     return response
+#
+# if __name__ == '__main__':
+#     app.run(debug=True)
+
+# # Recommend artworks to a user:
+# user_id = 14
+# recommended = model.recommend(user_id, user_items)
+# print(recommended)
 
 
-# creating an ALS model
-model = implicit.als.AlternatingLeastSquares(factors=50)
-model.fit(liked_matrix_sparse)
-user_items = liked_matrix_sparse.T.tocsr()
-recommendations = model.recommend(4, 'art_16')
-related = model.similar_items('art_16')
+
