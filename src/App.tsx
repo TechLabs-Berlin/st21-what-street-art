@@ -35,7 +35,7 @@ const App: React.FC = () => {
   return (
     <IonApp>
       <Suspense fallback={<div className="ion-text-center">
-        <IonSpinner name="crescent"> </IonSpinner>
+        <IonSpinner name="lines"> </IonSpinner>
       </div>}>
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
           <IonReactRouter>
