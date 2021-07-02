@@ -2,7 +2,6 @@ import pandas as pd
 import os
 import implicit
 import scipy.sparse as sparse
-from flask import Flask, jsonify, request
 
 users = pd.read_csv('users.csv', converters={'liked': eval})
 
@@ -40,33 +39,19 @@ def get_list_of_dict(keys, list_of_tuples):
     list_of_dict = [dict(zip(keys, values)) for values in list_of_tuples]
     return list_of_dict
 
-keys = ("id", "confidence")
+keys_art = ("artwork_id", 'similarity')
+keys_user = ("user_id", 'confidence')
 
 # Find similar artworks:
 art_id = 25
-print(type(art_id))
-n_similar = 5
+n_similar = 6
 similar = model.similar_items(art_id, n_similar)
-print(get_list_of_dict(keys, similar))
+print(get_list_of_dict(keys_art, similar))
 
-# app = Flask(__name__)
-#
-# @app.route('/recs', methods = ['GET'])
-# def recs():
-#     art_id = request.args['art']
-#     n_similar = 5
-#     similar = model.similar_items(art_id, n_similar)
-#     response = (get_list_of_dict(keys, similar))
-#     response.headers.add("Access-Control-Allow-Origin", "*")
-#     return response
-#
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-# # Recommend artworks to a user:
-# user_id = 14
-# recommended = model.recommend(user_id, user_items)
-# print(recommended)
+# Recommend artworks to a user:
+user_id = 14
+recommended = model.recommend(user_id, user_items)
+print(get_list_of_dict(keys_user,recommended))
 
 
 
