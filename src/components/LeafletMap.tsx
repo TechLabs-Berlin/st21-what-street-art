@@ -49,8 +49,9 @@ const LeafletMap: FC<Props> = (props) => {
             <div className="thumbnailContainer">
                 <img id="thumbnail" src={marker.thumbnail}></img>
               </div>
-              <h5 className="artMarkerTitle">{marker.title}</h5>
-              <h6>{marker.location.address}</h6>
+              <div className="artMarkerTitle">{marker.title}</div>  <div className="artMarkerArtist">//{marker.artist}</div>
+            
+              <div className="artMarkerLocation">{marker.location.address}</div>
            
             </div>
           </Popup>
