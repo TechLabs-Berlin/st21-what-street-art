@@ -5,13 +5,13 @@
 **What Street Art** is a project participating in the Techlabs Summer Term 2021.
 
 ## Team
-* **DS** Emma Carballal
-* **DS** Daryna Kubar
-* **AI** Fernando Muñoz
 * **UX** Anna Lebedenko
 * **UX** Luca-Elia Salomon
 * **WD** Laura Dobson
 * **WD** Matheus Passos
+* **DS** Daryna Kubar
+* **DS** Emma Carballal
+* **AI** Fernando Muñoz
 
 ## Mentor
 Matheus Albuquerque
