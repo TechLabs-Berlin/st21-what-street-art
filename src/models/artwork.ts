@@ -10,4 +10,5 @@ export interface Artwork {
   title: string;
   thumbnail: string;
   distance?: number;
+  description: string;
 }
