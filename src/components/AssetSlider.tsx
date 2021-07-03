@@ -23,7 +23,7 @@ export const AssetSlider: React.FC<Props> = (props) => {
       <div>
         <Swiper
           slidesPerView={2.5}
-          spaceBetween={-10}
+          spaceBetween={0}
           loop={false}
           className="mySwiper1"
         >
