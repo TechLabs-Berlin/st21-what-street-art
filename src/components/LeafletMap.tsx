@@ -9,6 +9,7 @@ import { Artwork } from "../models/artwork";
 
 import useGeolocation from "../hooks/useGeolocation";
 
+
 /* Starting position of Map - Berlin */
 const position = { lat: 52.52, lng: 13.405 };
 
@@ -72,17 +73,19 @@ const LeafletMap: FC<Props> = (props) => {
             ]}
           >
             <div>
-            <div className="thumbnailContainer">
+              <div className="thumbnailContainer">
                 <img id="thumbnail" src={marker.thumbnail}></img>
               </div>
-              <div className="artMarkerTitle">{marker.title}</div>  <div className="artMarkerArtist">//{marker.artist}</div>
-            
+
+              <div className="artMarkerTitle">{marker.title}</div>  
+              <div className="artMarkerArtist">//{marker.artist}</div>
               <div className="artMarkerLocation">{marker.location.address}</div>
-           
+              <div className="artPage">More details...</div>
+            
             </div>
           </Popup>
         </Marker>
-      ))}
+      ))};
 
       <div id="leaflet-map"></div>
     </MapContainer>
