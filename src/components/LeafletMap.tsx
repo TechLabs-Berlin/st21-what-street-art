@@ -7,7 +7,9 @@ import markerIcon from "../assets/markerIcon.png";
 import shadow from "../assets/shadow.png";
 import { Artwork } from "../models/artwork";
 
-/* Starting position of Map */
+import useGeolocation from "../hooks/useGeolocation";
+
+/* Starting position of Map - Berlin */
 const position = { lat: 52.52, lng: 13.405 };
 
 interface Props {
@@ -17,10 +19,34 @@ interface Props {
 const LeafletMap: FC<Props> = (props) => {
   const { markers } = props;
 
+
+/* User Location */
+  const userLocation = useGeolocation();
+
   return (
-    <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+    <MapContainer 
+      center={[Number(userLocation.lat), Number(userLocation.lng)]} 
+      zoom={13} 
+      scrollWheelZoom={false}>
+
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
+
+/* User Location Marker */
+        <Marker
+          position={[
+            Number(userLocation.lat), 
+            Number(userLocation.lng)
+          ]}>
+
+        <Popup>
+        You are here!
+      </Popup>
+    </Marker>
+
+
+
+/* Street Art Location Marker */
       {markers.map((marker) => (
         <Marker
           key={marker.id}
