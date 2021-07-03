@@ -47,8 +47,8 @@ export const Home: React.FC = () => {
       <Header />
       <IonContent>
         <AssetSlider title="Popular" data={popularArtworksData} />
-        <AssetSlider title="Recently Added" data={recentArtworksData} />
         <AssetSlider title="Near you" data={nearYouArtworksData} />
+        <AssetSlider title="Recently Added" data={recentArtworksData} />
       </IonContent>
     </IonPage>
   );
