@@ -26,6 +26,7 @@ ion-avatar img {
   display: flex;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --background-activated: false;
 }
 
 #editProfileIcon {
@@ -51,4 +52,16 @@ ion-card-content {
   display: flex;
   font-size: 22px;
   font-weight: 600;
+}
+
+.sliderHolder {
+}
+
+.seeAll {
+  color: #8b8b8d;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  position: relative;
+  --background-activated: false;
+  --border-color: rgba(0, 0, 0, 0);
 }
