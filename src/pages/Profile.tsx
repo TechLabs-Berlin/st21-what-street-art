@@ -3,6 +3,9 @@ import { heartOutline, bookmarkOutline, personOutline, exitOutline, createOutlin
 import Header from '../components/Header';
 import './Profile.css';
 
+import cutie from '../assets/cutie.png';
+import editProfile from '../assets/editProfile.svg';
+
 const Profile: React.FC = () => {
   return (
     <IonPage>
@@ -12,13 +15,20 @@ const Profile: React.FC = () => {
         <IonCard>
           <IonCardContent>
             <IonAvatar class="avatar">
-      <img src="https://ca.slack-edge.com/T6QB33X0T-U01RJ95D74Z-45314715827d-512" />
+      <img src={cutie} />
       </IonAvatar>
-              <IonButton strong className="editProfile" fill="outline" size="default" href="/Profile">Edit Profile<IonIcon icon={createOutline} slot="end" />
+              <IonButton className="editProfile" fill="outline" size="default" href="/Profile">
+                Edit Profile
+                <img src={editProfile} id="editProfileIcon"></img>
               </IonButton>
-             <IonCardTitle class="profileName">@annalebedenko</IonCardTitle>
+            
+             <IonCardTitle class="profileName">UserName</IonCardTitle>
           </IonCardContent>
         </IonCard>
+
+
+
+
 {/* 
         <IonCard>
           <IonItem>
