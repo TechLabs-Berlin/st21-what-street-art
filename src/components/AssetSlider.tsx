@@ -36,6 +36,10 @@ export const AssetSlider: React.FC<Props> = (props) => {
           spaceBetween={0}
           loop={false}
           className="mySwiper1"
+          observer={true}
+          observeParents={true}
+          watchSlidesVisibility={true}
+          watchSlidesProgress={true}
         >
           {data.map((item) => {
             return (
