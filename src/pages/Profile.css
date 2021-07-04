@@ -37,7 +37,7 @@ ion-card {
   display: flex;
   flex-direction: column;
   width: 100% !important;
-  height: 22vh;
+  height: 20vh;
   margin: 0 !important;
 }
 
@@ -47,7 +47,7 @@ ion-card-content {
 }
 
 .profileName {
-  left: 153px;
+  left: 140px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   font-size: 22px;
