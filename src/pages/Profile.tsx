@@ -75,9 +75,8 @@ export const Profile: React.FC = () => {
           </IonCardContent>
         </IonCard>
 
-        <AssetSlider title="Popular" data={popularArtworksData} />
-        <AssetSlider title="Recently Added" data={recentArtworksData} />
-        <AssetSlider title="Near you" data={nearYouArtworksData} />
+        <AssetSlider title="Liked Artworks" data={popularArtworksData} />
+        <AssetSlider title="Saved Artworks" data={recentArtworksData} />
 
 
       </IonContent>
