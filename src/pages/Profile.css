@@ -7,31 +7,42 @@
 
 ion-avatar img {
   padding-bottom: 10%;
-  width: 120px !important;
-  height: 120px !important;
+  width: 135px !important;
+  height: 135px !important;
   max-width: 160px !important;
   max-height: 160px !important;
 }
 
 .editProfile {
   position: absolute;
-  left: 59%;
-  right: 5%;
-  top: 5%;
+  left: 60%;
+  bottom: 55%;
   --border-color: rgba(0, 0, 0, 0);
+  color: gray;
+  font-size: 1rem;
+  margin-right: 0 !important;
 }
 
 ion-card {
   display: flex;
   flex-direction: column;
   width: 100% !important;
-  height: 20vh;
+  height: 22vh;
   margin: 0 !important;
+}
+
+ion-card-content {
+  padding-top: 0.5rem !important;
+  padding-right: 0 !important;
 }
 
 .profileName {
   display: flex;
-  left: 10%;
   justify-content: center;
   font-size: 22px;
+  padding-left: 15%;
+}
+
+#editProfileIcon {
+  margin-left: 0.7rem;
 }
