@@ -6,6 +6,7 @@ import "./AssetSlider.css";
 import SwiperCore, { Pagination } from "swiper/core";
 import { Artwork } from "../models/artwork";
 import { IonCard, IonCardSubtitle, IonCardTitle } from "@ionic/react";
+import { EmptyState } from "./empty-state/EmptyState";
 
 SwiperCore.use([Pagination]);
 
@@ -16,6 +17,15 @@ interface Props {
 
 export const AssetSlider: React.FC<Props> = (props) => {
   const { title, data } = props;
+
+  if (data.length <= 0) {
+    return (
+      <div>
+        <h4>{title}</h4>
+        <EmptyState />
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -32,14 +42,14 @@ export const AssetSlider: React.FC<Props> = (props) => {
               <SwiperSlide key={item.id}>
                 <IonCard className="card">
                   <div className="img-wrapper">
-                  <img className="images" src={item.image} alt="" />
+                    <img className="images" src={item.image} alt="" />
                   </div>
                   <IonCardTitle className="name-artwork">
                     {item.title}
-                    </IonCardTitle>
+                  </IonCardTitle>
                   <IonCardSubtitle className="name-artist">
                     {item.artist}
-                    </IonCardSubtitle>
+                  </IonCardSubtitle>
                 </IonCard>
               </SwiperSlide>
             );
