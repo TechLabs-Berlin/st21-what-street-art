@@ -73,14 +73,13 @@ export const Profile: React.FC = () => {
           </IonCardContent>
         </IonCard>
 
-    <div>
+
+    <div className="sliderHolder">
         <AssetSlider title="Liked Artworks" data={popularArtworksData}/> 
-          <IonButton>See all</IonButton>
-    </div>
+          <IonButton className="seeAll" fill="outline">See all</IonButton>
       
-    <div>
         <AssetSlider title="Saved Artworks" data={recentArtworksData} />
-          <IonButton>See all</IonButton>
+          <IonButton className="seeAll" fill="outline">See all</IonButton>
     </div>
 
 
