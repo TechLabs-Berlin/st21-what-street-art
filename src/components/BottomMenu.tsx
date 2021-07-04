@@ -9,38 +9,43 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 
-import Home from '../pages/Home';
+import Home from "../pages/Home";
 import Map from "../pages/Map";
 import Scan from "../pages/Scan";
 import Profile from "../pages/Profile";
 import Explore from "../pages/Explore";
 
 import Settings from "../pages/Settings";
+import Artworks from "../pages/Artworks";
 
 import "@ionic/react/css/core.css";
 
-import map from '../assets/map.svg';
-import explore from '../assets/explore.svg';
-import camera from '../assets/camera.svg';
-import home from '../assets/home.svg';
+import map from "../assets/map.svg";
+import explore from "../assets/explore.svg";
+import camera from "../assets/camera.svg";
+import home from "../assets/home.svg";
 
-import './BottomMenu.css';
-
+import "./BottomMenu.css";
 
 const BottomMenu: React.FC = () => {
   return (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-        {/* Routes */}
+          {/* Routes */}
           {/* Home */}
           <Route exact path="/Home">
             <Home />
           </Route>
-  
+
           {/* Settings */}
           <Route exact path="/Settings">
             <Settings />
+          </Route>
+
+          {/* Artworks */}
+          <Route exact path="/Artworks">
+            <Artworks />
           </Route>
 
           {/* Map */}
@@ -62,11 +67,9 @@ const BottomMenu: React.FC = () => {
           <Route path="/Explore">
             <Explore />
           </Route>
-
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom">
-          
           {/* Tabs */}
           {/* Home */}
           <IonTabButton tab="Home" href="/Home">
@@ -75,11 +78,11 @@ const BottomMenu: React.FC = () => {
           </IonTabButton>
 
           {/* Map */}
-           <IonTabButton tab="Map" href="/Map">
+          <IonTabButton tab="Map" href="/Map">
             <img src={map} alt="Map" />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
-     
+
           {/* Scan */}
           <IonTabButton tab="Scan" href="/Scan">
             <img src={camera} alt="Scan" />
@@ -87,11 +90,10 @@ const BottomMenu: React.FC = () => {
           </IonTabButton>
 
           {/* Explore */}
-         <IonTabButton tab="Explore" href="/Explore">
+          <IonTabButton tab="Explore" href="/Explore">
             <img src={explore} alt="Explore" />
             <IonLabel>Explore</IonLabel>
           </IonTabButton>
-        
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
