@@ -1,6 +1,5 @@
 import React from 'react';
-import { IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonTitle } from '@ionic/react';
-import { personOutline } from 'ionicons/icons';
+import { IonHeader, IonToolbar, IonButtons, IonButton } from '@ionic/react';
 import './Header.css';
 
 import user from '../assets/user.svg';
