@@ -37,8 +37,6 @@ export const Profile: React.FC = () => {
     property: "dateAdded",
   });
 
-  // Later we need to limit to 9
-  const nearYouArtworksData = useNearYouArtworks();
 
   // Optimizing Page Renders
   const [isVisible, setIsVisible] = useState(true);
@@ -75,8 +73,15 @@ export const Profile: React.FC = () => {
           </IonCardContent>
         </IonCard>
 
-        <AssetSlider title="Liked Artworks" data={popularArtworksData} />
+    <div>
+        <AssetSlider title="Liked Artworks" data={popularArtworksData}/> 
+          <IonButton>See all</IonButton>
+    </div>
+      
+    <div>
         <AssetSlider title="Saved Artworks" data={recentArtworksData} />
+          <IonButton>See all</IonButton>
+    </div>
 
 
       </IonContent>
