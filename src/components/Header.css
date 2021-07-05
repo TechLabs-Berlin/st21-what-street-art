@@ -11,7 +11,6 @@ ion-toolbar {
 
 #userIcon {
   --background-activated: false;
-  margin-bottom: 50px;
   margin-right: 5px;
 }
 
