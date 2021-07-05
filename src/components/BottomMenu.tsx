@@ -73,25 +73,25 @@ const BottomMenu: React.FC = () => {
           {/* Tabs */}
           {/* Home */}
           <IonTabButton tab="Home" href="/Home">
-            <img src={home} alt="Home" />
+            <img className="bottomMenuIcons" src={home} alt="Home" />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
           {/* Map */}
           <IonTabButton tab="Map" href="/Map">
-            <img src={map} alt="Map" />
+            <img className="bottomMenuIcons" src={map} alt="Map" />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
 
           {/* Scan */}
           <IonTabButton tab="Scan" href="/Scan">
-            <img src={camera} alt="Scan" />
+            <img className="bottomMenuIcons" src={camera} alt="Scan" />
             <IonLabel>Scan</IonLabel>
           </IonTabButton>
 
           {/* Explore */}
           <IonTabButton tab="Explore" href="/Explore">
-            <img src={explore} alt="Explore" />
+            <img className="bottomMenuIcons" src={explore} alt="Explore" />
             <IonLabel>Explore</IonLabel>
           </IonTabButton>
         </IonTabBar>
