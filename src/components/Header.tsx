@@ -15,7 +15,7 @@ return (
                 <img className = "logo-full" src = {logoNavBar} alt="Logo"/>      
 
             <IonButtons slot="end">
-                <IonButton href="/Profile">
+                <IonButton id="userIcon" href="/Profile">
                 <img src={user} alt="Profile" ></img>
                 </IonButton>
             </IonButtons>
