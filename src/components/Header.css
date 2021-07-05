@@ -1,12 +1,18 @@
 ion-toolbar {
-  height: 80px;
+  height: 100px;
 }
 
 .logo-full {
-  width: 281px;
-  height: 59px;
+  width: 321px;
+  height: 99px;
   margin-left: 16px;
-  margin-top: 10px;
+  margin-top: 0px;
+}
+
+#userIcon {
+  --background-activated: false;
+  margin-bottom: 50px;
+  margin-right: 5px;
 }
 
 h1 {
