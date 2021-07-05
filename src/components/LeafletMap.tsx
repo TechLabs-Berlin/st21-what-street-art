@@ -9,7 +9,6 @@ import { Artwork } from "../models/artwork";
 
 import useGeolocation from "../hooks/useGeolocation";
 
-
 /* Starting position of Map - Berlin */
 const position = { lat: 52.52, lng: 13.405 };
 
@@ -20,34 +19,21 @@ interface Props {
 const LeafletMap: FC<Props> = (props) => {
   const { markers } = props;
 
-
-/* User Location */
+  /* User Location */
   const userLocation = useGeolocation();
 
   return (
-    <MapContainer 
-      center={[Number(userLocation.lat), Number(userLocation.lng)]} 
-      zoom={13} 
-      scrollWheelZoom={false}>
-
+    <MapContainer
+      center={[Number(userLocation.lat), Number(userLocation.lng)]}
+      zoom={13}
+      scrollWheelZoom={false}
+    >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-
-
-/* User Location Marker */
-        <Marker
-          position={[
-            Number(userLocation.lat), 
-            Number(userLocation.lng)
-          ]}>
-
-        <Popup>
-        You are here!
-      </Popup>
-    </Marker>
-
-
-
-/* Street Art Location Marker */
+      /* User Location Marker */
+      <Marker position={[Number(userLocation.lat), Number(userLocation.lng)]}>
+        <Popup>You are here!</Popup>
+      </Marker>
+      /* Street Art Location Marker */
       {markers.map((marker) => (
         <Marker
           key={marker.id}
@@ -77,17 +63,15 @@ const LeafletMap: FC<Props> = (props) => {
                 <img id="thumbnail" src={marker.thumbnail}></img>
               </div>
 
-              <div className="artMarkerTitle">{marker.title}</div>  
+              <div className="artMarkerTitle">{marker.title}</div>
               <div className="artMarkerArtist">//{marker.artist}</div>
               <div className="artMarkerLocation">{marker.location.address}</div>
               <div className="artPage">More details...</div>
-            
             </div>
           </Popup>
         </Marker>
-      ))};
-
-      <div id="leaflet-map"></div>
+      ))}
+      ;<div id="leaflet-map"></div>
     </MapContainer>
   );
 };
