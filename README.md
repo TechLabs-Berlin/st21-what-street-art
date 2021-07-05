@@ -34,7 +34,6 @@ Repo: https://github.com/dkubar/st21-what-street-art-deployed.git
     Example access: https://what-street-art-app.herokuapp.com/near-you?lat=52.5156609&lng=13.3768537
 * ### "You might also like" feature 
     Example access: https://what-street-art-app.herokuapp.com/ymal?id=523
-* ### "Scan" feature (?)
 
 ## Acknowledgements
 We would like to thank our mentors, track leads and heads of journey at Techlabs who generously donated their time and expertise to guide us through this learning journey, especially:
