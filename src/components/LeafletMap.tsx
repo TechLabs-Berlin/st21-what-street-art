@@ -27,6 +27,7 @@ const LeafletMap: FC<Props> = (props) => {
       center={[Number(userLocation.lat), Number(userLocation.lng)]}
       zoom={13}
       scrollWheelZoom={false}
+      tap={false}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       /* User Location Marker */
