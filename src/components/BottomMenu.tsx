@@ -1,6 +1,5 @@
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import {
-  IonIcon,
   IonLabel,
   IonRouterOutlet,
   IonTabBar,
@@ -14,9 +13,9 @@ import Map from "../pages/Map";
 import Scan from "../pages/Scan";
 import Profile from "../pages/Profile";
 import Explore from "../pages/Explore";
+import Art from "../pages/Art";
 
 import Settings from "../pages/Settings";
-import Artworks from "../pages/Artworks";
 
 import "@ionic/react/css/core.css";
 
@@ -43,9 +42,9 @@ const BottomMenu: React.FC = () => {
             <Settings />
           </Route>
 
-          {/* Artworks */}
-          <Route exact path="/Artworks">
-            <Artworks />
+          {/* Art */}
+          <Route exact path="/Art">
+            <Art />
           </Route>
 
           {/* Map */}

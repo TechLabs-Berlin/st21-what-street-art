@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./LeafletMap.css";
 
@@ -16,7 +16,7 @@ interface Props {
   markers: Artwork[];
 }
 
-const LeafletMap: FC<Props> = (props) => {
+const LeafletMap: React.FC<Props> = (props) => {
   const { markers } = props;
 
   /* User Location */
