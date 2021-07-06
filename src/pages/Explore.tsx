@@ -1,40 +1,48 @@
-import { IonContent, IonPage, IonGrid, IonRow, IonCol, IonCard, IonCardContent } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import React, { useState } from "react";
+import { IonContent, IonPage} from '@ionic/react';
 import './Explore.css';
 import Header from '../components/Header';
 
-import cutie from '../assets/cutie.png';
+import ImageGrid from '../components/ImageGrid';
 
-const Explore: React.FC = () => {
+import { useArtwork } from "../hooks/artworks";
 
+export const Explore: React.FC = () => {
+    const gridImagesId = useArtwork ({
+      limit: 18,
+      id: string,
+    });
+  
+
+    // Optimizing Page Renders
+    const [isVisible, setIsVisible] = useState(true);
+  
+    useIonViewDidEnter(() => {
+      console.log("useIonViewDidEnter");
+      setIsVisible(true);
+    });
+  
+    useIonViewDidLeave(() => {
+      console.log("useIonViewDidLeave");
+      setIsVisible(false);
+    });
+  
+    if (!isVisible) return null;
+  
 
   return (
-        <IonPage>
-          <Header />
+    <IonPage>
+      <Header />
           <IonContent>
-         
             <h1 className="explore">Explore</h1>
 
-            <IonGrid>
-              <IonRow class="ion-no-margin">
+          <ImageGrid data={gridImagesId} />
 
-                <IonCol class="ion-no-padding" size = "4">
-                    <div className="img-wrap">
-                      <a href="/Art"> 
-                        <img className="images" src={cutie} alt=""/>
-                          <div className="overlay">
-                            <div className="overlayText">Not your Garfield</div>
-                         </div>
-                      </a>
-                    </div>
-                </IonCol>
+    </IonContent>
+  </IonPage>
+);
+};
 
-              </IonRow>
-            </IonGrid>
-         
-          </IonContent>
-        </IonPage>
-      );
-    }
+// The memo uses the memory to render less
+export default React.memo(Explore);
 
-    export default Explore;
