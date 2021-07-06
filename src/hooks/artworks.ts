@@ -53,10 +53,13 @@ export const usePopularArtworks = (criteria: FilteringCriteria<Artwork>) => {
   return data;
 };
 
+
+// Use to grab artwork ID for Art 
 export const useArtwork = (id: string) => {
   const artworkRef = useFirestore()
     .collection(FirebaseCollection.artworks)
-    .doc(id);
+    .doc(id)
+    .limit(criteria.limit);
 
   const data = useFirestoreDocData(artworkRef);
 
