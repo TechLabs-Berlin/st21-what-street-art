@@ -3,10 +3,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Explore.css';
 import Header from '../components/Header';
 
-
 import cutie from '../assets/cutie.png';
-
-
 
 const Explore: React.FC = () => {
 
@@ -22,147 +19,19 @@ const Explore: React.FC = () => {
               <IonRow class="ion-no-margin">
 
                 <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
+                    <div className="img-wrap">
+                      <a href="/Art"> 
+                        <img className="images" src={cutie} alt=""/>
+                          <div className="overlay">
+                            <div className="overlayText">Not your Garfield</div>
+                         </div>
+                      </a>
                     </div>
                 </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-
-                <IonCol class="ion-no-padding" size = "4">
-                  <div className="img-wrap"><img className="images" src={cutie} alt="" /></div>
-                  <div className="overlay">
-                    <div className="overlayText">
-                    My Name is John
-                    </div>
-                    </div>
-                </IonCol>
-               
-
-          
-           
 
               </IonRow>
             </IonGrid>
-               
+         
           </IonContent>
         </IonPage>
       );
