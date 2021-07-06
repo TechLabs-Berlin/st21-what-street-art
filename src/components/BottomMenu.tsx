@@ -15,8 +15,6 @@ import Profile from "../pages/Profile";
 import Explore from "../pages/Explore";
 import Art from "../pages/Art";
 
-import Settings from "../pages/Settings";
-
 import "@ionic/react/css/core.css";
 
 import map from "../assets/map.svg";
@@ -35,11 +33,6 @@ const BottomMenu: React.FC = () => {
           {/* Home */}
           <Route exact path="/Home">
             <Home />
-          </Route>
-
-          {/* Settings */}
-          <Route exact path="/Settings">
-            <Settings />
           </Route>
 
           {/* Art */}

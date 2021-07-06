@@ -1,5 +1,5 @@
 .artworks-card {
-  height: 100%;
+  height: 840px;
 }
 
 .artworks-image {
@@ -32,7 +32,8 @@
   font-size: 16px;
   line-height: 17px;
   color: #8b8b8d;
-  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .artworks-info {
@@ -43,7 +44,8 @@
   line-height: 21px;
   text-align: justify;
   color: #ffffff;
-  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .top-right {
@@ -62,7 +64,7 @@
 }
 
 .artworks-location {
-  position: absolute;
+  padding-left: 10px;
 }
 
 .artworks-address {
@@ -75,4 +77,16 @@
   display: inline-block;
   padding: 0 0 0 10px;
   margin-top: -5px;
+}
+
+.mapArtwork {
+  width: 100% !important;
+  height: 80px;
+  position: static;
+  object-fit: cover;
+}
+
+.mightAlsoLike {
+  padding-top: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
