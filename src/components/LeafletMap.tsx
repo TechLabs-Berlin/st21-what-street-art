@@ -32,7 +32,11 @@ const LeafletMap: React.FC<Props> = (props) => {
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {/* /* User Location Marker */}
       <Marker position={[Number(userLocation.lat), Number(userLocation.lng)]}>
-        <Popup>You are here!</Popup>
+        <Popup>
+          <div className="youAreHere">
+            You are here!
+          </div>
+        </Popup>
       </Marker>
 
       {/* /* Street Art Location Marker */}
