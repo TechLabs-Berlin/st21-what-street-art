@@ -37,4 +37,4 @@ Repo: https://github.com/dkubar/st21-what-street-art-deployed.git
 
 ## Acknowledgements
 We would like to thank our mentors, track leads and heads of journey at Techlabs who generously donated their time and expertise to guide us through this learning journey, especially:
-Snježana "Anna" Frketic, Daniel da Rocha, Zubin John, Matheus Albuquerque, Maximilian Schall, Saumya Bhatt, Benedickt Ulrich, Luciana Wills... 
+Snježana "Anna" Frketic, Daniel da Rocha, Zubin John, Matheus Albuquerque, Maximilian Schall, Saumya Bhatt, Luciana Serna Wills, Benedikt Ulrich, Andrey Skabelin.
