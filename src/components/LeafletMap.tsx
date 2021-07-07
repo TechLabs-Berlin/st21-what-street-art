@@ -34,6 +34,7 @@ const LeafletMap: React.FC<Props> = (props) => {
       <Marker position={[Number(userLocation.lat), Number(userLocation.lng)]}>
         <Popup>You are here!</Popup>
       </Marker>
+
       {/* /* Street Art Location Marker */}
       {markers.map((marker) => (
         <Marker
@@ -67,7 +68,8 @@ const LeafletMap: React.FC<Props> = (props) => {
               <div className="artMarkerTitle">{marker.title}</div>
               <div className="artMarkerArtist">//{marker.artist}</div>
               <div className="artMarkerLocation">{marker.location.address}</div>
-              <div className="artPage">More details...</div>
+              <div className="artPage">
+                <a href="/Art">More details...</a></div>
             </div>
           </Popup>
         </Marker>
