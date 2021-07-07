@@ -7,12 +7,14 @@ ion-content {
 ion-content::part(scroll) {
   padding-right: 15px;
 }
-
 ion-spinner {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+ion-content {
+  --ion-background-color: #0d0d0d;
 }
 
 /** Ionic CSS Variables **/
