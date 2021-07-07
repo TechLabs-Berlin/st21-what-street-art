@@ -34,8 +34,8 @@ body {
 }
 
 .img-wrapper {
-  width: 160px !important;
-  height: 160px !important;
+  width: auto;
+  height: 160px;
 }
 
 .images {
