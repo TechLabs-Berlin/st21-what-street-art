@@ -59,7 +59,7 @@ export const useArtwork = (id: string) => {
   const artworkRef = useFirestore()
     .collection(FirebaseCollection.artworks)
     .doc(id)
-    .limit(criteria.limit);
+  //.limit(criteria.limit);
 
   const data = useFirestoreDocData(artworkRef);
 
