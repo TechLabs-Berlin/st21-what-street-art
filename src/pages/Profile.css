@@ -5,6 +5,10 @@
   font-size: 34px;
 }
 
+.yourProfileCard {
+  color: #0d0d0d;
+}
+
 ion-avatar img {
   top: 129px;
   left: 16px;
