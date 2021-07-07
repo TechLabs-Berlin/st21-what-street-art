@@ -29,14 +29,16 @@ import "./theme/variables.css";
 
 // Cleaned the code a bit. Changed the suspense to the spinning weel but not sure yet if we add a css to the app and place it centered or we add the code directly to this file. Added routes to the pages, know the Profile is loading faster but still, when coming back from Profile it takes a lot to load, as the app is loading from the start.
 
-
-
 const App: React.FC = () => {
   return (
     <IonApp>
-      <Suspense fallback={<div className="ion-text-center">
-        <IonSpinner name="lines"> </IonSpinner>
-      </div>}>
+      <Suspense
+        fallback={
+          <div className="ion-text-center">
+            <IonSpinner color="primary" name="lines" />
+          </div>
+        }
+      >
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
           <IonReactRouter>
             <IonRouterOutlet>
