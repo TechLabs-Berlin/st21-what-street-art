@@ -58,7 +58,7 @@
 
 .imageGrid_image {
   border-radius: 0 !important;
-  width: 125px;
+  width: 100%;
   height: 125px;
   object-fit: fill;
 }
