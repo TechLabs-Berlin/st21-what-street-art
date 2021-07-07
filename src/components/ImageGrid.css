@@ -9,12 +9,15 @@
   width: 100vw;
 }
 
-.ion-col {
-  position: relative;
+.ion-row {
+  margin: 0;
+  padding: 0;
 }
 
-.img-wrap {
+.ion-col {
   position: relative;
+  padding: 0 !important;
+  margin: 0;
 }
 
 .overlay {
@@ -48,4 +51,7 @@
 
 .images {
   border-radius: 0 !important;
+  width: 125px;
+  height: 125px;
+  object-fit: fill;
 }
