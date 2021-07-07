@@ -13,4 +13,5 @@ export enum URL {
 
 export enum URLEndpoint {
   nearYou = "near-you",
+  youMightAlsoLike = "ymal"
 }

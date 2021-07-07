@@ -5,7 +5,7 @@ import {
 } from "reactfire";
 import useSWR from "swr";
 
-import { getNearYou } from "../api";
+import { getNearYou, getYouMightAlsoLike } from "../api";
 import { Artwork } from "../models/artwork";
 import { FilteringCriteria, FirebaseCollection } from "../models/firebase";
 import useGeolocation from "./useGeolocation";
@@ -32,6 +32,29 @@ export const useNearYouArtworks = () => {
   );
 
   const ids = data?.map((item) => String(item.id));
+  const result = artworks
+    ?.filter((artwork) => ids?.includes(artwork.id))
+    .map((artwork) => ({
+      ...artwork,
+      distance: data?.find((item) => String(item.id) === artwork.id)?.distance,
+    }));
+
+  return result;
+};
+
+export const useYouMightAlsoLike = (id: string) => {
+  // TODO: Use queries to filter which IDs we want
+  const artworks = useArtworks();
+
+  const { data } = useSWR<Artwork[]>(
+    [id],
+    getYouMightAlsoLike,
+    {
+      suspense: true,
+    }
+  );
+
+  const ids = data?.map((id) => String(id));
   const result = artworks
     ?.filter((artwork) => ids?.includes(artwork.id))
     .map((artwork) => ({

@@ -10,3 +10,13 @@ export const getNearYou = async (lat: number, lng: number) => {
 
   return response;
 };
+
+export const getYouMightAlsoLike = async (id: string) => {
+  const baseUrl = `${URL.base}/${URLEndpoint.youMightAlsoLike}`;
+  const url = stringifyUrl({ url: baseUrl, query: { id } });
+
+  const rawResponse = await fetch(url);
+  const response = rawResponse.json();
+
+  return response;
+};

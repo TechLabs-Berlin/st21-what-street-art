@@ -16,7 +16,7 @@ import addBookmark from "../assets/addBookmark.svg";
 import iconHeart from "../assets/iconHeart.svg";
 import AssetSlider from "../components/AssetSlider";
 import { RouteComponentProps } from "react-router";
-import { useArtwork } from "../hooks/artworks";
+import { useArtwork, useYouMightAlsoLike } from "../hooks/artworks";
 
 interface Params {
   id: string;
@@ -26,11 +26,10 @@ interface Props extends RouteComponentProps<Params> {}
 
 export const Art: React.FC<Props> = (props) => {
   const { id } = props.match.params;
-  const data = useArtwork(id);
+  const artwork = useArtwork(id);
+  const relatedArtworks = useYouMightAlsoLike(id);
 
-  const { title, description, image, artist, location } = data;
-
-  console.log(data);
+  const { title, description, image, artist, location } = artwork;
 
   return (
     <IonPage>
@@ -56,9 +55,7 @@ export const Art: React.FC<Props> = (props) => {
               <IonIcon icon={locationOutline} size="large"></IonIcon>
               <p className="artworks-address">{location.city}</p>
             </div>
-            <br></br>
-            <p>You might also like</p>
-            {/* <AssetSlider title="Recently Added" data={recentArtworksData} /> */}
+            <AssetSlider title="You might also like" data={relatedArtworks} />
           </IonCardTitle>
         </IonCard>
       </IonContent>
