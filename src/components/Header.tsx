@@ -8,22 +8,22 @@ import logoNavBar from '../assets/logoNavBar.svg';
 
 
 const Header: React.FC = () => {
-return (
-    <IonHeader>
-        <IonToolbar>
-            
-                <img className = "logo-full" src = {logoNavBar} alt="Logo"/>      
+    return (
+        <IonHeader className="ion-no-border">
+            <IonToolbar>
 
-            <IonButtons slot="end">
-                <IonButton id="userIcon" href="/Profile">
-                <img src={user} alt="Profile" ></img>
-                </IonButton>
-            </IonButtons>
+                <img className="logo-full" src={logoNavBar} alt="Logo" />
 
-        </IonToolbar>
-    </IonHeader>
+                <IonButtons slot="end">
+                    <IonButton id="userIcon" href="/Profile">
+                        <img src={user} alt="Profile" ></img>
+                    </IonButton>
+                </IonButtons>
 
-);
+            </IonToolbar>
+        </IonHeader>
+
+    );
 };
 
 
