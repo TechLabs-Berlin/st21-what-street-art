@@ -46,7 +46,7 @@ export const AssetSlider: React.FC<Props> = (props) => {
               <SwiperSlide key={item.id}>
                 <IonCard className="card">
                   <div className="img-wrapper">
-                    <a href="/Art">
+                    <a href={`/Art/${item.id}`}>
                       <img className="images" src={item.image} alt="" />
                     </a>
                   </div>

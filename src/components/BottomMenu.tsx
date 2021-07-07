@@ -36,9 +36,7 @@ const BottomMenu: React.FC = () => {
           </Route>
 
           {/* Art */}
-          <Route exact path="/Art">
-            <Art />
-          </Route>
+          <Route path="/Art/:id" component={Art} />
 
           {/* Map */}
           <Route exact path="/Map">

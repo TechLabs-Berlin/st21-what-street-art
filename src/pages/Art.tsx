@@ -11,22 +11,32 @@ import {
 import { locationOutline } from "ionicons/icons";
 import Header from "../components/Header";
 import "./Art.css";
+import { Artwork } from "../models/artwork";
 import addBookmark from "../assets/addBookmark.svg";
 import iconHeart from "../assets/iconHeart.svg";
-import { usePopularArtworks } from "../hooks/artworks";
 import AssetSlider from "../components/AssetSlider";
+import { RouteComponentProps } from "react-router";
+import { useArtwork } from "../hooks/artworks";
 
-export const Art: React.FC = () => {
-  const popularArtworksData = usePopularArtworks({
-    limit: 9,
-    property: "likes",
-  });
+interface Params {
+  id: string;
+}
+
+interface Props extends RouteComponentProps<Params> {}
+
+export const Art: React.FC<Props> = (props) => {
+  const { id } = props.match.params;
+  const data = useArtwork(id);
+
+  const { title, description, image, artist, location } = data;
+
+  console.log(data);
 
   return (
     <IonPage>
       <Header />
       <IonContent fullscreen>
-        <IonCard className="artworks-card">
+        <IonCard className="artworks-card" key={id}>
           <div className="top-right">
             <IonButton className="likes" href="/Art" fill="clear">
               <IonIcon icon={iconHeart} slot="icon-only" />
@@ -35,43 +45,25 @@ export const Art: React.FC = () => {
               <IonIcon icon={addBookmark} slot="icon-only" />
             </IonButton>
           </div>
-          <img
-            className="artworks-image"
-            src="https://www.iheartberlin.de/wp-content/uploads/2018/01/Bruderkuss-Mural.jpg"
-            alt=""
-          />
-          <IonCardTitle className="artworks-title">Item.Title</IonCardTitle>
-          <IonCardSubtitle className="artworks-artist">
-            Item.Artist
-          </IonCardSubtitle>
-          <p className="artworks-info">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio
-            nostrum, maiores quo quod inventore rem consectetur suscipit
-            perspiciatis illum? Dolorum illum porro voluptas error tempora unde
-            quaerat consequatur doloribus corporis!
-          </p>
-          <div className="artworks-location">
-            <IonIcon icon={locationOutline} size="large"></IonIcon>
-            <p className="artworks-address">
-              item.location,<br></br>PLZ Berlin
-            </p>
-          </div>
-          <br></br>
-          <img
-            className="mapArtwork"
-            src="https://thumbs.dreamstime.com/b/vector-city-map-berlin-black-white-germany-simple-style-129618693.jpg"
-            alt=""
-          ></img>
-          <div className="mightAlsoLike">
-            <AssetSlider
-              title="You might also like"
-              data={popularArtworksData}
-            />
-          </div>
-          {/* <AssetSlider title="Recently Added" data={recentArtworksData} /> */}
+          <img className="artworks-image" src={image} alt="" />
+          <IonCardTitle className="artworks-title">
+            {title}
+            <IonCardSubtitle className="artworks-artist">
+              {artist}
+            </IonCardSubtitle>
+            <p className="artworks-info">{description}</p>
+            <div className="artworks-location">
+              <IonIcon icon={locationOutline} size="large"></IonIcon>
+              <p className="artworks-address">{location.city}</p>
+            </div>
+            <br></br>
+            <p>You might also like</p>
+            {/* <AssetSlider title="Recently Added" data={recentArtworksData} /> */}
+          </IonCardTitle>
         </IonCard>
       </IonContent>
     </IonPage>
   );
 };
+
 export default Art;
