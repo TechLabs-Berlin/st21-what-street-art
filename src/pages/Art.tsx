@@ -45,18 +45,16 @@ export const Art: React.FC<Props> = (props) => {
             </IonButton>
           </div>
           <img className="artworks-image" src={image} alt="" />
-          <IonCardTitle className="artworks-title">
-            {title}
-            <IonCardSubtitle className="artworks-artist">
-              {artist}
-            </IonCardSubtitle>
-            <p className="artworks-info">{description}</p>
-            <div className="artworks-location">
-              <IonIcon icon={locationOutline} size="large"></IonIcon>
-              <p className="artworks-address">{location.city}</p>
-            </div>
-            <AssetSlider title="You might also like" data={relatedArtworks} />
-          </IonCardTitle>
+          <IonCardTitle className="artworks-title">{title}</IonCardTitle>
+          <IonCardSubtitle className="artworks-artist">
+            {artist}
+          </IonCardSubtitle>
+          <p className="artworks-info">{description}</p>
+          <div className="artworks-location">
+            <IonIcon icon={locationOutline} size="large"></IonIcon>
+            <p className="artworks-address">{location.address}</p>
+          </div>
+          <AssetSlider title="You might also like" data={relatedArtworks} />
         </IonCard>
       </IonContent>
     </IonPage>
