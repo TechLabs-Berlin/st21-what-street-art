@@ -1,5 +1,5 @@
 .artworks-card {
-  height: 840px;
+  height: 680px;
 }
 
 .artworks-image {
@@ -23,10 +23,6 @@
   color: white;
   padding: 16px;
   margin-top: 24px;
-
-  background: -webkit-linear-gradient(top, #ff8719, #fa05f8);
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1.5px transparent;
 }
 
 .artworks-artist {
@@ -81,6 +77,7 @@
   display: inline-block;
   padding: 0 0 0 10px;
   margin-top: -5px;
+  width: 200px;
 }
 
 .mapArtwork {

@@ -30,15 +30,15 @@ body {
   height: 210px;
   max-width: 170px;
   display: block;
-  background-color: #0d0d0d !important;
+  background-color: #0d0d0d;
 }
 
 .img-wrapper {
-  width: auto;
-  height: 160px;
+  width: 160px !important;
+  height: 160px !important;
 }
 
-.images {
+.imagesAssetSlider {
   width: auto;
   height: auto;
   object-fit: fill;
@@ -80,7 +80,6 @@ h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700 !important;
   font-style: normal;
-
   background: -webkit-linear-gradient(top, #ff8719, #fa05f8);
   -webkit-background-clip: text;
   -webkit-text-stroke: 1.5px transparent;
