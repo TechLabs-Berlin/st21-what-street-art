@@ -47,7 +47,11 @@ export const AssetSlider: React.FC<Props> = (props) => {
                 <IonCard className="card">
                   <div className="img-wrapper">
                     <a href={`/Art/${item.id}`}>
-                      <img className="images" src={item.image} alt="" />
+                      <img
+                        className="imagesAssetSlider"
+                        src={item.image}
+                        alt=""
+                      />
                     </a>
                   </div>
                   <IonCardTitle className="name-artwork">

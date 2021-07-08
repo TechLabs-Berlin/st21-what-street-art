@@ -5,6 +5,7 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
+  IonIcon,
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 
@@ -64,29 +65,25 @@ const BottomMenu: React.FC = () => {
           {/* Tabs */}
           {/* Home */}
           <IonTabButton tab="Home" href="/Home">
-            <img className="bottomMenuIcons" src={homeOutline} alt="Home" />
+            <IonIcon src={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
           {/* Map */}
           <IonTabButton tab="Map" href="/Map">
-            <img className="bottomMenuIcons" src={mapOutline} alt="Map" />
+            <IonIcon src={mapOutline} />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
 
           {/* Scan */}
           <IonTabButton tab="Scan" href="/Scan">
-            <img className="bottomMenuIcons" src={cameraOutline} alt="Scan" />
+            <IonIcon src={cameraOutline} />
             <IonLabel>Scan</IonLabel>
           </IonTabButton>
 
           {/* Explore */}
           <IonTabButton tab="Explore" href="/Explore">
-            <img
-              className="bottomMenuIcons"
-              src={rocketOutline}
-              alt="Explore"
-            />
+            <IonIcon src={rocketOutline} />
             <IonLabel>Explore</IonLabel>
           </IonTabButton>
         </IonTabBar>

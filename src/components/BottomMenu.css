@@ -19,3 +19,8 @@ ion-label {
   font-size: 14px;
   font-weight: 600;
 }
+
+ion-tab-bar,
+ion-tab-button {
+  background-image: linear-gradient(#ff8719, #fa03fb);
+}

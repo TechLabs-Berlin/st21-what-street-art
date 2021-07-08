@@ -11,7 +11,6 @@ import {
 import { locationOutline } from "ionicons/icons";
 import Header from "../components/Header";
 import "./Art.css";
-import { Artwork } from "../models/artwork";
 import addBookmark from "../assets/addBookmark.svg";
 import iconHeart from "../assets/iconHeart.svg";
 import AssetSlider from "../components/AssetSlider";
