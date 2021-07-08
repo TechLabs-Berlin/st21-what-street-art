@@ -3,10 +3,10 @@ ion-toolbar {
 }
 
 .logo-full {
-  width: 321px;
-  height: 99px;
+  width: 300px;
+  height: 80px;
   margin-left: 16px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 #userIcon {
