@@ -19,9 +19,3 @@ body {
 .swiper-slide:nth-child(3n) {
   width: 100%;
 }
-
-h1 {
-  background: -webkit-linear-gradient(top, #ff8719, #fa05f8);
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1.5px transparent;
-}

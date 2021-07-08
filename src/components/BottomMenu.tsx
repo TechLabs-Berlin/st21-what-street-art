@@ -17,12 +17,13 @@ import Art from "../pages/Art";
 
 import "@ionic/react/css/core.css";
 
-import map from "../assets/map.svg";
-import explore from "../assets/explore.svg";
-import camera from "../assets/camera.svg";
-import home from "../assets/home.svg";
-
 import "./BottomMenu.css";
+import {
+  cameraOutline,
+  homeOutline,
+  mapOutline,
+  rocketOutline,
+} from "ionicons/icons";
 
 const BottomMenu: React.FC = () => {
   return (
@@ -63,25 +64,29 @@ const BottomMenu: React.FC = () => {
           {/* Tabs */}
           {/* Home */}
           <IonTabButton tab="Home" href="/Home">
-            <img className="bottomMenuIcons" src={home} alt="Home" />
+            <img className="bottomMenuIcons" src={homeOutline} alt="Home" />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
 
           {/* Map */}
           <IonTabButton tab="Map" href="/Map">
-            <img className="bottomMenuIcons" src={map} alt="Map" />
+            <img className="bottomMenuIcons" src={mapOutline} alt="Map" />
             <IonLabel>Map</IonLabel>
           </IonTabButton>
 
           {/* Scan */}
           <IonTabButton tab="Scan" href="/Scan">
-            <img className="bottomMenuIcons" src={camera} alt="Scan" />
+            <img className="bottomMenuIcons" src={cameraOutline} alt="Scan" />
             <IonLabel>Scan</IonLabel>
           </IonTabButton>
 
           {/* Explore */}
           <IonTabButton tab="Explore" href="/Explore">
-            <img className="bottomMenuIcons" src={explore} alt="Explore" />
+            <img
+              className="bottomMenuIcons"
+              src={rocketOutline}
+              alt="Explore"
+            />
             <IonLabel>Explore</IonLabel>
           </IonTabButton>
         </IonTabBar>
