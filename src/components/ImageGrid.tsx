@@ -19,7 +19,7 @@ export const ImageGrid: React.FC<Props> = (props) => {
         {data.map((item) => (
           <IonCol class="ion-no-padding" size="4">
             <div className="img-wrap">
-              <a href="/Art">
+              <a href={`/Art/${item.id}`}>
                 <img className="imageGrid_image" src={item.image} alt="" />
                 <div className="overlay">
                   <div className="overlayText">{item.title}</div>
