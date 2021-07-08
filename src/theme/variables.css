@@ -14,7 +14,7 @@ ion-spinner {
   transform: translate(-50%, -50%);
 }
 ion-content {
-  --ion-background-color: #0d0d0d;
+  --ion-background-color: black;
 }
 
 /** Ionic CSS Variables **/
