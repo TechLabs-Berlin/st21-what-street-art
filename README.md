@@ -16,17 +16,19 @@
 ## Mentor
 Matheus Albuquerque
 
-## UX files
+## UX links
 * Survey: https://tripetto.app/run/X8ZN4Y5R9C
-* Survey results: https://drive.google.com/file/d/13nYSZNK-Jq7_PoHjQyj9im99mxo1893V/view?usp=sharing
-* Takeaways from survey: https://drive.google.com/file/d/1nepQetgroU-0KdtaFPfOw_DRkiIoB-kB/view?usp=sharing
 * Competitor analysis: https://miro.com/app/board/o9J_lEknq80=/
-* Personas and stories: https://drive.google.com/file/d/1DfAZjearYeFMbfK_qvsjHWEID0dy9QBK/view?usp=sharing
-* User Flows: https://docs.google.com/document/d/15g3REpC4PUHIWIS84XcWqIxLu8sZpnLfF__5KEVcicQ/edit?usp=sharing
+* UI Ideas: https://www.figma.com/proto/uBhYU7XNDItIfeX0W22MH9/WhatStreetArt-Everything?page-id=577%3A22429&node-id=644%3A17338&viewport=-1882%2C876%2C0.5704072713851929&scaling=scale-down
 * Information Architecture: https://www.figma.com/file/GXLM25Hr0alx7nvXsi88qO/IA-What-Street-Art?node-id=0%3A1
 * Wireframes: https://www.figma.com/proto/uBhYU7XNDItIfeX0W22MH9/WhatStreetArt---Everything?page-id=0%3A1&node-id=169%3A6490&viewport=-1034%2C780%2C0.5655179023742676&scaling=scale-down
+
+## UX files (also added as files to repo) 
+* Survey results: https://drive.google.com/file/d/13nYSZNK-Jq7_PoHjQyj9im99mxo1893V/view?usp=sharing
+* Takeaways from survey: https://drive.google.com/file/d/1nepQetgroU-0KdtaFPfOw_DRkiIoB-kB/view?usp=sharing
+* Personas and stories: https://drive.google.com/file/d/1DfAZjearYeFMbfK_qvsjHWEID0dy9QBK/view?usp=sharing
+* User Flows: https://docs.google.com/document/d/15g3REpC4PUHIWIS84XcWqIxLu8sZpnLfF__5KEVcicQ/edit?usp=sharing
 * User Testing summary: https://docs.google.com/spreadsheets/d/1Di070KAM8wMYWG7IhdW2v_TAwWXD5taZsVjQF-deJkg/edit?usp=sharing
-* UI Ideas: https://www.figma.com/proto/uBhYU7XNDItIfeX0W22MH9/WhatStreetArt-Everything?page-id=577%3A22429&node-id=644%3A17338&viewport=-1882%2C876%2C0.5704072713851929&scaling=scale-down
 
 ## Deployed Features
 Repo: https://github.com/dkubar/st21-what-street-art-deployed.git
