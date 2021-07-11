@@ -1,5 +1,6 @@
 # What Street Art: A blog post
 
+<img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/wsaposter3__1_.png">
 
 When we first set off to create *What Street Art*, we envisioned an iOS app that would allow the user to discover local street art by utilizing geolocation by tagging graffiti, murals, stencils and paste-ups on an interactive map. Not only that, but we aimed to provide a list of artworks in close proximity to the user and even recommend similar artworks to the user based on their previous clicks. 
 
