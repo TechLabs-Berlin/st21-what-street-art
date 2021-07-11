@@ -64,7 +64,7 @@ app = Flask(__name__)
 
 
 model = create_model()
-model.load_weights('C:/Users/fdomu/Desktop/whatStreetArt/ResNet50/weights.h5')
+model.load_weights('./ResNet50/weights.h5')
 
 
 
