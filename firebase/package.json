@@ -1,0 +1,43 @@
+{
+  "name": "@wsa/firebase",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Matheus Albuquerque",
+  "main": "dist/index.js",
+  "scripts": {
+    "automation:pull:collection": "node scripts/pull-collection.js",
+    "automation:push:collection": "node scripts/push-collection.js",
+    "automation:fetch:artworks": "node scripts/fetch-artworks.js",
+    "automation:fetch:users": "node scripts/fetch-users.js",
+    "build": "yarn clean && tsc",
+    "clean": "rm -rf dist",
+    "deploy:production": "yarn deploy:production:functions && yarn deploy:production:rules",
+    "deploy:production:functions": "firebase deploy -P production --only functions",
+    "deploy:production:rules": "firebase deploy -P production --only firestore:rules",
+    "deploy:staging": "yarn deploy:staging:functions && yarn deploy:staging:rules",
+    "deploy:staging:functions": "firebase deploy -P staging --only functions",
+    "deploy:staging:rules": "firebase deploy -P staging --only firestore:rules",
+    "logs": "firebase functions:log",
+    "serve": "yarn build && firebase emulators:start --only functions",
+    "shell": "yarn build && firebase functions:shell",
+    "start": "yarn shell"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.13.2",
+    "fs-extra": "^9.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/node-mailjet": "^3.3.4",
+    "firebase-functions-test": "^0.2.3",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": "12"
+  }
+}

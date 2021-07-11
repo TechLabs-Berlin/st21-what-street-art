@@ -1,0 +1,18 @@
+# Compiled JavaScript files
+**/*.js
+**/*.js.map
+!scripts/**/*.js
+
+# Except the ESLint config file
+!.eslintrc.js
+
+# Node.js dependency directory
+node_modules/
+
+# Firebase data to be edited locally
+
+config
+
+# Firebase credentials
+service-account.staging.json
+service-account.production.json
