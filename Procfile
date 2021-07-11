@@ -1,0 +1,1 @@
+web: gunicorn test_image_ResNet50:app
