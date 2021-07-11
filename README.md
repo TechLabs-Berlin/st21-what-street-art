@@ -51,6 +51,11 @@ Repo: https://github.com/dkubar/st21-what-street-art-deployed.git
     Example access: https://what-street-art-app.herokuapp.com/near-you?lat=52.5156609&lng=13.3768537
 * ### "You might also like" feature 
     Example access: https://what-street-art-app.herokuapp.com/ymal?id=523
+* ### "Scan" feature
+    Works locally by running the file test_image_ResNet50.py
+    It is important to notice that in order to properly work, the weights have to be downloaded from https://drive.google.com/file/d/1YppEQhKfix3zqRfIPTRfX7p-rQV6khMd/view?usp=sharing and placed inside the ResNet50 folder.
+    
+    Besides this, a dummy model has been deployed in http://wsa-simple.herokuapp.com/ though its functionalities are still to be fully implemented.
 
 ## Acknowledgements
 We would like to thank our mentors, track leads and heads of journey at Techlabs who generously donated their time and expertise to guide us through this learning journey, especially:
