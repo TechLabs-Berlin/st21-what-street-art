@@ -11,6 +11,13 @@ The biggest overarching question was, of course, „where do we start?“. This 
 
 Our UX team first brainstormed a list of questions that later formed the basis for an online survey in order to determine who our potential users are and what functionality was needed for our app. While they waited on the results of this survey, they analyzed our three major competitors. Based on the results of the survey, in which 59 people participated, they were able to craft 2 main Personas and user flows. After discussing the feasibility of certain features, we decided to use iOS as our targeted operating system and a wireframe mockup on Figma was created. While DS and WD worked on the technical realization, UX reached out to their mentors online and tackled testing our prototype „in the field“. Two users were asked to complete five tasks using our app and three more tasks using a similar app called Street Art Cities. The users were asked to think aloud while peforming these tasks to give a general impression of both apps and their hand movemenst while using the apps were recorded via camera. This valuable input was collected and used to further evaluate feasible critique points and feature ideas into our prototype. Lastly, the UI was ideated, with five potential stlyes being presented to the team. Once the choice was made, the UX team began implementing the final touches.
 
+![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/user_flow.jpeg)
+![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/persona_with_user_story.jpeg)
+![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/user_survey.jpeg)
+![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/user_testing_1_720.png)
+![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/wireframes.jpeg)
+
+
 
 ## DS
 
@@ -35,3 +42,4 @@ The AI team created a convolutional neural network using heavy data augmentation
 Overall, we managed to hit a good chunk of our target goals for our MVP1: an AI powered scan-function (although not integrated into the app), a geolocation-based map, murals filtered by popularity, proximity and latest upload in an image slider, additional artwork recommendations based on previous clicks, pages for each artwork displaying more details and an Explore page allowing the user to browse our database of images. 
 
 Although our brains are still swarming with ideas for our MVP2, we are all proud of our journey and progress so far – as individuals, but more importantly, as a team. 
+
