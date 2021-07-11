@@ -1,0 +1,93 @@
+.artworks-card {
+  height: 680px;
+}
+
+.artworks-image {
+  width: 100% !important;
+  height: 180px;
+  position: static;
+  object-fit: cover;
+}
+
+.artworks-details {
+  margin-top: 30px;
+  padding: 16px;
+}
+
+.artworks-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.artworks-artist {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  color: #8b8b8d;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.artworks-info {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: justify;
+  color: #ffffff;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  border-radius: 100%;
+}
+
+.likes {
+  margin: -20px;
+}
+
+.bookmark {
+  margin: 0px;
+}
+
+.artworks-location {
+  padding-left: 10px;
+}
+
+.artworks-address {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #8b8b8d;
+  display: inline-block;
+  padding: 0 0 0 10px;
+  margin-top: -5px;
+  width: 200px;
+}
+
+.mapArtwork {
+  width: 100% !important;
+  height: 80px;
+  position: static;
+  object-fit: cover;
+}
+
+.mightAlsoLike {
+  padding-top: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

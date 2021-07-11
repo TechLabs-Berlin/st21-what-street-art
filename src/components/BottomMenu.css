@@ -1,0 +1,26 @@
+img {
+  width: 25px;
+  height: 25px;
+}
+
+ion-tab-bar {
+  opacity: 88%;
+  height: 90px;
+  --border: 0;
+}
+
+.bottomMenuIcons {
+  width: 35px;
+  height: 34px;
+}
+
+ion-label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+ion-tab-bar,
+ion-tab-button {
+  background-image: linear-gradient(#ff8719, #fa03fb);
+}

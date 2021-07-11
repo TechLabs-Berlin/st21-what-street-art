@@ -1,0 +1,12 @@
+.empty_state {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty_state img {
+  width: 100vw;
+  height: auto;
+}
