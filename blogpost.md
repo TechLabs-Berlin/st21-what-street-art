@@ -4,7 +4,8 @@ When we first set off to create What Street Art, we envisioned an iOS app that w
 
 But we sought to go even above and beyond said features. We wanted to offer our users the ability to utilize AI technology to identify an artwork either from using a device’s camera scan, or via an image upload. 
 
-The biggest overarching question was, of course, „where do we start?“. This was the first time any of us would be working on a project of this category and scope and with a toolset of totally new skills. How did our did our tracks fit together? How did what we just spent the last 4 months learning translate into a dynamic application?
+The biggest overarching question was, of course, „where do we start?“. This was the first time any of us would be working on a project of this category and scope and with a toolset of totally new skills. How did our did our tracks fit together? How would we apply our theoretical knowledge to a practical collaboration in a cross-functional team?
+
 
 
 ## UX
