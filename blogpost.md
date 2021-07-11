@@ -1,7 +1,7 @@
 # What Street Art: A blog post
 
 
-When we first set off to create What Street Art, we envisioned an iOS app that would allow the user to discover local street by utilizing geolocation by tagging graffiti, murals, stencils and paste-ups on an interactive map. Not only that, but we aimed to provide a list of artworks in close proximity to the user and even recommend similar artworks to the user based on their previous clicks. 
+When we first set off to create *What Street Art*, we envisioned an iOS app that would allow the user to discover local street by utilizing geolocation by tagging graffiti, murals, stencils and paste-ups on an interactive map. Not only that, but we aimed to provide a list of artworks in close proximity to the user and even recommend similar artworks to the user based on their previous clicks. 
 
 But we sought to go even above and beyond said features. We wanted to offer our users the ability to utilize AI technology to identify an artwork either from using a device’s camera scan, or via an image upload. 
 
@@ -20,7 +20,7 @@ Our UX team first brainstormed a list of questions that later formed the basis f
 
 ## DS
 
-We knew right away that our project would require a dataset – but from where was the next challenge. The DS team decided to scrape the data using Python from Street Art Cities and Urban Nation, with their permission, to use as the basis for What Street Art. This data was then cleaned, duplicates between the datasets were removed, and everything was uploaded onto Firebase. The „Near You“, „Recently Added“ and „You Might Also Like“ features were created in Python as Flask APIs and deployed in Heroku. The „Near You“ feature locates all street art within a 2km radius of the user. There were two main machine learning models explored for the „You Might Also Like“ feature, namely ALS (Alternating Least Square) and the Jaccard score, in order to build a recommender system with collaborative filtering.
+We knew right away that our project would require a dataset – but from where was the next challenge. The DS team decided to scrape the data using Python from Street Art Cities and Urban Nation, with their permission, to use as the basis for *What Street Art*. This data was then cleaned, duplicates between the datasets were removed, and everything was uploaded onto Firebase. The „Near You“, „Recently Added“ and „You Might Also Like“ features were created in Python as Flask APIs and deployed in Heroku. The „Near You“ feature locates all street art within a 2km radius of the user. There were two main machine learning models explored for the „You Might Also Like“ feature, namely ALS (Alternating Least Square) and the Jaccard score, in order to build a recommender system with collaborative filtering.
 
 
 
@@ -32,7 +32,7 @@ Since the goal was to create a mobile app, the WD decided to use Ionic React, as
 
 ## AI
 
-The AI team created a convolutional neural network using heavy data augmentation given that we have just once instance per category. In the case of What Street Art, we wanted to predict the name (or id) of the artwork. In total, we ended up with 573 different categories, with one instance per category. The ultimate intention was to be able to upload an image, preprocess it to fit the requirements of the model and return predictions.  In order to improve the accuracy of these predictions, we used pre-trained models (ResNet50 and EfficientB0). In the end, a simplified dummy version was deployed, as the main product was too hefty to use for Heroku.
+The AI team created a convolutional neural network using heavy data augmentation given that we have just once instance per category. In the case of *What Street Art*, we wanted to predict the name (or id) of the artwork. In total, we ended up with 573 different categories, with one instance per category. The ultimate intention was to be able to upload an image, preprocess it to fit the requirements of the model and return predictions.  In order to improve the accuracy of these predictions, we used pre-trained models (ResNet50 and EfficientB0). In the end, a simplified dummy version was deployed, as the main product was too hefty to use for Heroku.
 
 
 ## Results
