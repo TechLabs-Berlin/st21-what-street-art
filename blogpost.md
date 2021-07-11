@@ -16,6 +16,7 @@ Our UX team first brainstormed a list of questions that later formed the basis f
 <img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/Presentation2.png">
 <img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/Presentation3.png">
 <img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/WireframesUserTesting.png">
+<img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/Wireframes grey.jpg">
 
 
 
