@@ -32,7 +32,7 @@ Since the goal was to create a mobile app, the WD decided to use Ionic React, as
 
 ## AI
 
-The AI team created a convolutional neural network using heavy data augmentation given that we have just once instance per category. In the case of *What Street Art*, we wanted to predict the name (or id) of the artwork. In total, we ended up with 573 different categories, with one instance per category. The ultimate intention was to be able to upload an image, preprocess it to fit the requirements of the model and return predictions.  In order to improve the accuracy of these predictions, we used pre-trained models (ResNet50 and EfficientB0). In the end, a simplified dummy version was deployed, as the main product was too hefty to use for Heroku.
+The AI team created a convolutional neural network using heavy data augmentation given that we have just one instance per category. In the case of *What Street Art*, we wanted to predict the name (or id) of the artwork. In total, we ended up with 573 different categories. The ultimate intention was to be able to upload an image, preprocess it to fit the requirements of the model and return predictions.  In order to improve the accuracy of these predictions, we used pre-trained models (ResNet50 and EfficientB0). In the end, a simplified dummy version was deployed, as the main product was too hefty to use for Heroku.
 
 
 ## Results
