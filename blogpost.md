@@ -1,5 +1,5 @@
 # What Street Art: A blog post
-![wsa_poster](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/wsaposter3__1_.png)
+
 
 When we first set off to create What Street Art, we envisioned an iOS app that would allow the user to discover local street by utilizing geolocation by tagging graffiti, murals, stencils and paste-ups on an interactive map. Not only that, but we aimed to provide a list of artworks in close proximity to the user and even recommend similar artworks to the user based on their previous clicks. 
 
@@ -14,10 +14,6 @@ The biggest overarching question was, of course, „where do we start?“. This 
 Our UX team first brainstormed a list of questions that later formed the basis for an online survey in order to determine who our potential users are and what functionality was needed for our app. While they waited on the results of this survey, they analyzed our three major competitors. Based on the results of the survey, in which 59 people participated, they were able to craft 2 main Personas and user flows. After discussing the feasibility of certain features, we decided to use iOS as our targeted operating system and a wireframe mockup on Figma was created. While DS and WD worked on the technical realization, UX reached out to their mentors online and tackled testing our prototype „in the field“. Two users were asked to complete five tasks using our app and three more tasks using a similar app called Street Art Cities. The users were asked to think aloud while peforming these tasks to give a general impression of both apps and their hand movemenst while using the apps were recorded via camera. This valuable input was collected and used to further evaluate feasible critique points and feature ideas into our prototype. Lastly, the UI was ideated, with five potential stlyes being presented to the team. Once the choice was made, the UX team began implementing the final touches.
 
 ![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/competitor_nalyses.jpeg)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/user_flow.jpeg)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/persona_with_user_story.jpeg)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/user_survey.jpeg)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/user_testing_1_720.png)
 
 
 
@@ -32,7 +28,6 @@ We knew right away that our project would require a dataset – but from where w
 
 Since the goal was to create a mobile app, the WD decided to use Ionic React, as there are a ton of useful elements within this framework that are ready to use „out-of-the-box“. We also switched to Typescript instead of vanilla Javascript, for compile-time safety and code scalability. The first step was to build the basic structure of the app so we could easily plug in the necessary features once they were decided upon. Once we had a header and a bottom menu successfully routed to their corresponding destinations, the groundwork had been laid. We knew that we would definitely need image sliders and a map outfitted with geolocation functionality to populate with the data provided by the DS team. Using SwiperJS, we were able to implement an attractive and user-friendly container for our images and filled it with dummy data as a placeholder until we connected everything to the backend. Next, we had to tackle the map. We decided to use Leaflet to create an interactive map with customized pop-ups. Meanwhile, we implemented a camera function to be used later for AI’s Scan feature, that basically asks the user for permission to use their device’s camera to take photos and upload images. Overall, the biggest challenge we faced on the WD team was figuring out how to seamlessly draw the data from Firebase into our application. Once we managed this, it was about tweaking the finer details of our features and implementing the UI.
 
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/flowmapp___information_architecture.jpeg)
 
 
 ## AI
@@ -46,8 +41,3 @@ Overall, we managed to hit a good chunk of our target goals for our MVP1: an AI 
 
 Although our brains are still swarming with ideas for our MVP2, we are all proud of our journey and progress so far – as individuals, but more importantly, as a team. 
 
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_1.png)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_2.png)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_3.png)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_4.png)
-![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_5.png)
