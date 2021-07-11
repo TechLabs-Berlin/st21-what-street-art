@@ -41,4 +41,4 @@ Overall, we managed to hit a good chunk of our target goals for our MVP1: an AI 
 
 Although our brains are still swarming with ideas for our MVP2, we are all proud of our journey and progress so far – as individuals, but more importantly, as a team. 
 
-<img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_1.PNG" width="302" height="540">
+<img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_1.PNG" width="302" height="540"><img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_2.PNG" width="302" height="540"><img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_3.PNG" width="302" height="540"><img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_4.PNG" width="302" height="540"><img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/screenshot_5.PNG" width="302" height="540">
