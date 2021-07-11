@@ -1,6 +1,6 @@
 library(rvest)
 
-dataset <- read.csv("data_final.csv", header = TRUE, stringsAsFactors = FALSE)
+dataset <- read.csv("artworks.csv", header = TRUE, stringsAsFactors = FALSE)
 imageLinks <- dataset$thumbnail
 
 downloadImage <- function(links){
@@ -9,14 +9,14 @@ downloadImage <- function(links){
                 mode = "wb")
 }
 
-setwd("./images")
+setwd("./images/streetArtCitiesBerlin")
 
 for (i in 1:length(imageLinks)){
   tryCatch(downloadImage(imageLinks[i]),
            error = function(e){
              print(paste0("The image with id ", dataset$id[i], " cannot be downloaded, skipping it!"))
            })
-  print(paste0("Image ", i, " out of 573 processed"))
+  print(paste0("Image ", i, " out of 608 processed"))
   Sys.sleep(2)
 }
 
