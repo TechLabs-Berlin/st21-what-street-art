@@ -22,6 +22,8 @@ We knew right away that our project would require a dataset – but from where w
 
 Since the goal was to create a mobile app, the WD decided to use Ionic React, as there are a ton of useful elements within this framework that are ready to use „out-of-the-box“. We also switched to Typescript instead of vanilla Javascript, for compile-time safety and code scalability. The first step was to build the basic structure of the app so we could easily plug in the necessary features once they were decided upon. Once we had a header and a bottom menu successfully routed to their corresponding destinations, the groundwork had been laid. We knew that we would definitely need image sliders and a map outfitted with geolocation functionality to populate with the data provided by the DS team. Using SwiperJS, we were able to implement an attractive and user-friendly container for our images and filled it with dummy data as a placeholder until we connected everything to the backend. Next, we had to tackle the map. We decided to use Leaflet to create an interactive map with customized pop-ups. Meanwhile, we implemented a camera function to be used later for AI’s Scan feature, that basically asks the user for permission to use their device’s camera to take photos and upload images. Overall, the biggest challenge we faced on the WD team was figuring out how to seamlessly draw the data from Firebase into our application. Once we managed this, it was about tweaking the finer details of our features and implementing the UI.
 
+![Test Image 4](https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/flowmapp___information_architecture.jpeg)
+
 
 ## AI
 
