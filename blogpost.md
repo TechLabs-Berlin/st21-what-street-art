@@ -1,6 +1,6 @@
 # What Street Art - A blog post
 
-When we first set off to create What Street Art, we envisioned creating an app that via geolocation would allow the user to discover local street art by tagging graffiti, murals, stencils and paste-ups on an interactive map, provide a list of artworks in close proximity to the user and even recommend similar artworks to the user based on their previous clicks. 
+When we first set off to create What Street Art, we envisioned creating an app that, via geolocation, would allow the user to discover local street art by tagging graffiti, murals, stencils and paste-ups on an interactive map, provide a list of artworks in close proximity to the user and even recommend similar artworks to the user based on their previous clicks. 
 
 But we sought to go even beyond these features. We wanted to offer our users the ability to utilize AI technology to identify an artwork either from using a device’s camera scan, or from a photo upload. 
 
