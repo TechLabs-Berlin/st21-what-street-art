@@ -4,6 +4,21 @@
 
 **What Street Art** is a project participating in the Techlabs Summer Term 2021.
 
+## Installation and Setup Instructions    
+Clone down this repository. You will need node, and npm/yarn installed globally on your machine.  
+  
+Installation:  
+`npm install`  `cd wsa-front`  `yarn`  
+
+Open a new terminal tab and then:  
+`cd wsa-front`  `yarn start`  
+  
+To Visit App:  
+localhost:3000/Home  
+  
+The App is best viewed as a iOS. (Right click on Browser > Inspect > Iphone 6/7/8/Plus)  
+  
+  
 ## Team
 * **UX** Anna Lebedenko
 * **UX** Luca-Elia Salomon
