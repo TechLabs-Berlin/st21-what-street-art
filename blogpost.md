@@ -13,7 +13,7 @@ The biggest overarching question was, of course, „where do we start?“. This 
 
 Our UX team first brainstormed a list of questions that later formed the basis for an online survey in order to determine who our potential users are and what functionality was needed for our app. While they waited on the results of this survey, they analyzed our three major competitors. Based on the results of the survey, in which 59 people participated, they were able to craft 2 main Personas and user flows. After discussing the feasibility of certain features, we decided to use iOS as our targeted operating system and a wireframe mockup on Figma was created. While DS and WD worked on the technical realization, UX reached out to their mentors online and tackled testing our prototype „in the field“. Two users were asked to complete five tasks using our app and three more tasks using a similar app called *Street Art Cities*. The users were asked to think aloud while peforming these tasks to give a general impression of both apps and their hand movemenst while using the apps were recorded via camera. This valuable input was collected and used to further evaluate feasible critique points and feature ideas into our prototype. Lastly, the UI was ideated, with five potential stlyes being presented to the team. Once the choice was made, the UX team began implementing the final touches.
 
-
+<img src="https://raw.githubusercontent.com/TechLabs-Berlin/st21-what-street-art/main/blogpost_images/Presentation2.PNG" width="302" height="540">
 
 
 
